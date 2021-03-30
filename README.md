@@ -1,21 +1,25 @@
-# TÍTULO DO PROJETO
+# Wikipedia Indígenas
 
-`CURSO`
+`Sistemas de Informação`
 
-`DISCIPLINA`
+`Aplicações Web`
 
-`SEMESTRE`
+`1o. SEMESTRE`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-- Obi-Wan Kenobi 
-- Anakin Skywalker
+- Alex Pantolfo
+- Eduardo Lara 
+- Eliane Lessa
+- Eric Mantoani 
+- Vismar 
+- Vitor 
 
 ## Professor
 
-- Mestre Yoda
+- Hugo de Paula
 
 # Documentação
 
