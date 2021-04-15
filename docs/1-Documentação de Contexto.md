@@ -23,12 +23,14 @@ Criar um site que centralize informações sobre comunidades indígenas, seja al
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Segundo o Censo de 2010 do IBGE, existem cerca de 820mil indígenas divididos em 7.103 comunidades espalhadas em todas as regiões do país. Foram registradas ainda 274 línguas indígenas faladas no Brasil e cerca de 17,5% dessa população não fala português.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A preservação das tradições desses povos vem sendo ao longo dos séculos ameaçada por um modelo de desenvolvimento que não contempla uma coexistência sustentável, assim, parte dessas culturas, línguas e mesmo desses povos vêm desaparecendo ao longo do tempo.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A falta de visibilidade sobre essas tradições contribui para uma visão distópica acerca da questão indígena no Brasil, e essa visão por vezes acaba por normalizar discursos e tomadas de decisões de políticas públicas na direção oposta ao reconhecimento do valor das tradições dos povos originários e sua preservação.
+
+Ainda que existam organizações e entidades no âmbito coletivo, que se articulam para a defesa dos interesses desses povos, acreditamos que uma ferramenta aberta, pública e colaborativa pode dar voz aos indivíduos e às coletividades de maneira horizontal, dando visibilidade a sua produção cultural e fomentando a integração entre comunidades e com a sociedade como um todo.
+
 
 ## Público-Alvo
 
