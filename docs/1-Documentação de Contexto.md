@@ -4,7 +4,7 @@ Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o pr
 
 ## Problema
 
-Existe, atualmente, muitos sites de onde pode-se adquirir conhecimento a cerca das culturas indígenas. Contudo, não existe, ainda, um lugar onde se tem centralizado informações sobre comunidades indígenas de forma clara e objetiva, fazendo com que essas informações sejam mais difíceis de se adquirir e acabam não sendo divulgadas para a população em geral. Dessa forma, acaba sendo criado a ideia de que o índio de alguma forma não pertença a sociedade brasileira e é enxergado como "o outro".
+Existem, atualmente, muitos sites de onde se pode adquirir conhecimento acerca das culturas indígenas. Contudo, não existe, ainda, um lugar onde se tem centralizadas informações sobre comunidades indígenas de forma clara e objetiva, fazendo com que essas informações sejam mais difíceis de se adquirir e acabam não sendo divulgadas para a população em geral. Dessa forma, acaba sendo criada a ideia de que o índio de alguma forma não pertença a sociedade brasileira e é enxergado como "o outro".
 
 - Ausência de um espaço que centralize informações sobre comunidades indígenas e as disponibilize de forma clara e objetiva.
 
