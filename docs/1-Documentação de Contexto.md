@@ -1,6 +1,9 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Segundo o Censo de 2010 do IBGE, existem cerca de 820mil indígenas divididos em 7.103 comunidades espalhadas em todas as regiões do país. Foram registradas ainda 274 línguas indígenas faladas no Brasil e cerca de 17,5% dessa população não fala português.
+
+A preservação das tradições desses povos vem sendo ao longo dos séculos ameaçada por um modelo de desenvolvimento que não contempla uma coexistência sustentável, assim, parte dessas culturas, línguas e mesmo desses povos vêm desaparecendo ao longo do tempo.
+
 
 ## Problema
 
@@ -22,10 +25,6 @@ Criar um site que centralize informações sobre comunidades indígenas, seja al
 - À longo prazo: fomentar a integração de comunidades indígenas entre si e com a sociedade, ser fonte confiável e centralizadora de informação.
 
 ## Justificativa
-
-Segundo o Censo de 2010 do IBGE, existem cerca de 820mil indígenas divididos em 7.103 comunidades espalhadas em todas as regiões do país. Foram registradas ainda 274 línguas indígenas faladas no Brasil e cerca de 17,5% dessa população não fala português.
-
-A preservação das tradições desses povos vem sendo ao longo dos séculos ameaçada por um modelo de desenvolvimento que não contempla uma coexistência sustentável, assim, parte dessas culturas, línguas e mesmo desses povos vêm desaparecendo ao longo do tempo.
 
 A falta de visibilidade sobre essas tradições contribui para uma visão distópica acerca da questão indígena no Brasil, e essa visão por vezes acaba por normalizar discursos e tomadas de decisões de políticas públicas na direção oposta ao reconhecimento do valor das tradições dos povos originários e sua preservação.
 
