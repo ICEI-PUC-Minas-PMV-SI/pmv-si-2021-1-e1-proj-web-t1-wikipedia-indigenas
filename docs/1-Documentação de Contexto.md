@@ -33,12 +33,7 @@ acreditamos que uma ferramenta aberta, pública e colaborativa pode dar voz aos 
 
 ## Público-Alvo
 
-- Comunidades indígenas
-- Professores, estudantes, pesquisadores
-- Qualquer pessoa interessada
-
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+-	Pessoas de todos os gêneros, de todas as idades, casados ou solteiros, com ou sem filhos,  moradores de todas os países com um foco maior no Brasil, pessoas com ensino médio e  superior incompleto ou até mesmo completo, independentes e autoconfiantes, com ênfase  maior em professores, estudantes, pesquisadores e em comunidades indígenas.
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
