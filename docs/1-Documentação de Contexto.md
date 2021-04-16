@@ -7,11 +7,11 @@ A preservação das tradições desses povos vem sendo ao longo dos séculos ame
 
 ## Problema
 
-Existem, atualmente, muitos sites de onde se pode adquirir conhecimento acerca das culturas indígenas. Contudo, não existe, ainda, um lugar onde se tem centralizadas informações sobre comunidades indígenas de forma clara e objetiva, fazendo com que essas informações sejam mais difíceis de se adquirir e acabam não sendo divulgadas para a população em geral. Dessa forma, acaba sendo criada a ideia de que o índio de alguma forma não pertença a sociedade brasileira e é enxergado como "o outro".
+A falta de visibilidade sobre essas tradições contribui para uma visão distópica acerca da questão indígena no Brasil, e essa visão por vezes acaba por normalizar discursos e tomadas de decisões de políticas públicas na direção oposta ao reconhecimento do valor das tradições dos povos originários e sua preservação.
 
-- Ausência de um espaço que centralize informações sobre comunidades indígenas e as disponibilize de forma clara e objetiva.
+Ainda que existam organizações e entidades no âmbito coletivo que se articulam para a defesa dos interesses desses povos, não existe um ambiente virtual que funcione como ponto de contato entre os membros dessas iniciativas, tampouco um pólo centralizador de informações sobre essas comunidades.
 
-- Falta de integração cultural, falta de pertencimento. No senso comum, enxerga-se o índio como "o outro" e não como parte integrante da mesma sociedade.
+Como resultado, perde toda a sociedade com a falta de integração cultural e uma consequente falta de pertencimento. No senso comum, enxerga-se o índio como "o outro" e não como parte integrante da mesma sociedade.
 
 
 ## Objetivos
@@ -24,11 +24,11 @@ Criar um site que centralize informações sobre comunidades indígenas, seja al
 
 - À longo prazo: fomentar a integração de comunidades indígenas entre si e com a sociedade, ser fonte confiável e centralizadora de informação.
 
+
 ## Justificativa
 
-A falta de visibilidade sobre essas tradições contribui para uma visão distópica acerca da questão indígena no Brasil, e essa visão por vezes acaba por normalizar discursos e tomadas de decisões de políticas públicas na direção oposta ao reconhecimento do valor das tradições dos povos originários e sua preservação.
-
-Ainda que existam organizações e entidades no âmbito coletivo, que se articulam para a defesa dos interesses desses povos, acreditamos que uma ferramenta aberta, pública e colaborativa pode dar voz aos indivíduos e às coletividades de maneira horizontal, dando visibilidade a sua produção cultural e fomentando a integração entre comunidades e com a sociedade como um todo.
+[WIP]
+acreditamos que uma ferramenta aberta, pública e colaborativa pode dar voz aos indivíduos e às coletividades de maneira horizontal, dando visibilidade a sua produção cultural e fomentando a integração entre comunidades e com a sociedade como um todo.
 
 
 ## Público-Alvo
