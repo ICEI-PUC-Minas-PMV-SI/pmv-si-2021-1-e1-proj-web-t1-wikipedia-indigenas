@@ -16,7 +16,7 @@ Como resultado, perde toda a sociedade com a falta de integração cultural e um
 
 ## Objetivos
 
-Criar um site que centralize informações sobre comunidades indígenas, seja alimentado pelas pessoas dessas comunidades e funcione como espaço de integração comunidades indígenas entre si e também entre essas comunidades e o restante da sociedade brasileira.
+Criar um site que centralize informações sobre comunidades indígenas, seja alimentado pelas pessoas dessas comunidades e funcione como espaço de integração das comunidades indígenas entre si e também com o restante da sociedade brasileira.
 
 - À curto prazo: criar um ambiente onde seja possível encontrar dados sobre comunidades indígenas a partir de recortes como: cultura, culinária, línguas, localização geográfica, e outros;
 
