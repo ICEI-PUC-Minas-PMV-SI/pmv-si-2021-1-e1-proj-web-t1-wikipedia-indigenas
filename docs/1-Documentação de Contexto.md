@@ -34,8 +34,3 @@ Uma ferramenta aberta, pública e colaborativa possibilitará aos indivíduos e 
 
 -	Pessoas de todos os gêneros, de todas as idades, casados ou solteiros, com ou sem filhos,  moradores de todas os países com um foco maior no Brasil, pessoas com ensino médio e  superior incompleto ou até mesmo completo, independentes e autoconfiantes, com ênfase  maior em professores, estudantes, pesquisadores e em comunidades indígenas.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
