@@ -8,21 +8,25 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+1 - José Maxakali: 36 anos, morador da TI Maxakali em Santa Helena de Minas, possui uma esposa; além das funções comunitárias da tribo, José também produz desenhos que ilustram o dia-a-dia dele e da aldeia. 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+José busca na ‘wiki indígena’ um espaço para divulgar suas gravuras e, principalmente, se articular com indígenas de outras tribos, especialmente do norte do país, que são mais organizadas politicamente, para melhor ‘lutar’ contra fazendeiros que frequentemente ameaçam a terra já demarcada;
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+2 - Juliana Domingues: 28 anos, mora em SP, é arquiteta e está fazendo seu mestrado em sociologia com enfoque em comunidades indígenas. 
+
+Juliana usa a ‘wiki indígena’ para ter contato direto com indígenas de diversas tribos do país a fim de poder conhecer, estudar e aprender mais sobre alguns desses povos. À partir deste contato, Juliana espera concluir seu mestrado e participar de iniciativas nas comunidades indígenas que contribuem com a manutenção das TIs, da cultura e do bem estar dos povos;
+
+3 - Anderson Menezes: 15 anos, mora em Tiradentes, tem curiosidade sobre os povos indígenas e busca se conectar com indígenas da sua idade;
+
+Anderson percebeu o quão pouco sabe sobre estes povos e decidiu buscar a fundo informações sobre eles, não apenas em sites informativos distantes da realidade das aldeias, mas através da ‘wiki indígena’, onde se conectou com indivíduos de tribos de várias regiões do país.
 
 ## Histórias de Usuários
+
+1 - Como morador de uma aldeia, eu quero divulgar meu trabalho e me articular politicamente com outras tribos para proteger a minha das ameaças de fazendeiros.
+
+2 - Como pesquisadora, quero conhecer mais sobre as relações sociais dentro de uma tribo e contribuir para a manutenção das mesmas.
+
+3 - Como cidadão, quero me conectar com indígenas da minha idade para fazer amigos, trocar informações, etc.
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
