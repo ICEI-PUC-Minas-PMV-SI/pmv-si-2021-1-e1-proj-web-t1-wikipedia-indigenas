@@ -27,8 +27,7 @@ Criar um site que centralize informações sobre comunidades indígenas, seja al
 
 ## Justificativa
 
-[WIP]
-acreditamos que uma ferramenta aberta, pública e colaborativa pode dar voz aos indivíduos e às coletividades de maneira horizontal, dando visibilidade a sua produção cultural e fomentando a integração entre comunidades e com a sociedade como um todo.
+Uma ferramenta aberta, pública e colaborativa possibilitará aos indivíduos e às coletividades sua presença em um ambiente ainda pouco explorado e com forte potencial indutor da promoção de sua produção cultural, aliado ao fomento da integração entre comunidades e delas para com a sociedade como um todo.
 
 
 ## Público-Alvo
