@@ -18,11 +18,11 @@ Como resultado, perde toda a sociedade com a falta de integração cultural e um
 
 Criar um site que centralize informações sobre comunidades indígenas, seja alimentado pelas pessoas dessas comunidades e funcione como espaço de integração das comunidades indígenas entre si e também com o restante da sociedade brasileira.
 
-- À curto prazo: criar um ambiente onde seja possível encontrar dados sobre comunidades indígenas a partir de recortes como: cultura, culinária, línguas, localização geográfica, e outros;
+- A curto prazo: criar um ambiente onde seja possível encontrar dados sobre comunidades indígenas a partir de recortes como: cultura, culinária, línguas, localização geográfica, e outros;
 
-- À médio prazo: tornar este ambiente um espaço de visibilização indígena, um veículo de publicação e um ponto de encontro entre essas comunidades;
+- A médio prazo: tornar este ambiente um espaço de visibilização indígena, um veículo de publicação e um ponto de encontro entre essas comunidades;
 
-- À longo prazo: fomentar a integração de comunidades indígenas entre si e com a sociedade, ser fonte confiável e centralizadora de informação.
+- A longo prazo: fomentar a integração de comunidades indígenas entre si e com a sociedade, ser fonte confiável e centralizadora de informação.
 
 
 ## Justificativa
