@@ -22,7 +22,9 @@ Anderson percebeu o quão pouco sabe sobre estes povos e decidiu buscar a fundo 
 
 ## Histórias de Usuários
 
-1 - Como morador de uma aldeia, eu quero divulgar meu trabalho e me articular politicamente com outras tribos para proteger a minha das ameaças de fazendeiros.
+- Como indígena, quero divulgar meu trabalho para que qualquer pessoa possa encontrar.
+- Como indígena, quero relatar ameaças que minha comunidade vem recebendo por parte de fazendeiros.
+- Como indígena, quero encontrar relatos de ocorrências em outras comunidades para poder entrar em contato com essas comunidades.
 
 2 - Como pesquisadora, quero conhecer mais sobre as relações sociais dentro de uma tribo e contribuir para a manutenção das mesmas.
 
@@ -30,12 +32,6 @@ Anderson percebeu o quão pouco sabe sobre estes povos e decidiu buscar a fundo 
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 > **Links Úteis**:
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
@@ -52,9 +48,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
+|RF-001| Permitir que o usuário cadastre seu trabalho | ALTA | 
+|RF-002| Permitir que o usuário registre ameaças à sua comunidade   | ALTA |
+|RF-003| Listar ocorrências registradas por comunidades | MÉDIA | 
 
 ### Requisitos não Funcionais
 
