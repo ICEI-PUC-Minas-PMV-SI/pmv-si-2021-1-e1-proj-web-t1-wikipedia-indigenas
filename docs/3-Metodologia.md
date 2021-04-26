@@ -5,6 +5,8 @@
 
 Para cada nova funcionalidade a ser desenvolvida, é preciso criar um novo branch. Durante a construção dessa feature, commits parciais podem ser enviados à branch `dev`. Ao fim da construção dessa funcionalidade, um `pull request` deve ser feito à branch `test`. Quando aprovada nos testes, pode ser realizado o merge com o branch `master`. 
 
+Teste.
+
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
