@@ -28,9 +28,14 @@ Anderson percebeu o quão pouco sabe sobre estes povos e decidiu buscar a fundo 
 
 2 - Como pesquisadora, quero conhecer mais sobre as relações sociais dentro de uma tribo e contribuir para a manutenção das mesmas.
 
-3 - Como cidadão, quero me conectar com indígenas da minha idade para fazer amigos, trocar informações, etc.
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Eu como um cidadão:
+- Gostaria de encontrar pessoas que compartilham hábitos, valores culturais, estilos musicais e ideologias políticas igual a minha.
+- Gostaria de visualizar o perfil de pessoas de outras tribos.
+- Gostaria de me conectar com indígenas da minha idade, trocar informações e fazer amigos.
+- Gostaria de conhecer a histórias de outras tribos.
+
+
 
 
 > **Links Úteis**:
