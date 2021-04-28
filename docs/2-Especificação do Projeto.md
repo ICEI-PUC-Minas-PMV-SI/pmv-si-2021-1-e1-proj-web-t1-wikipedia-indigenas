@@ -62,6 +62,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| Permitir que o usuário cadastre seu trabalho | ALTA | 
 |RF-002| Permitir que o usuário registre ameaças à sua comunidade   | ALTA |
 |RF-003| Listar ocorrências registradas por comunidades | MÉDIA | 
+|RF-004| Permitir que o usuário busque por conteúdo | ALTA |
+|RF-005| Feed com atualizações dos usuários indígenas cadastrados | MÉDIA |
+|RF-006| Troca de mensagens entre usuários indígenas e outros | ALTA |
 
 ### Requisitos não Funcionais
 
