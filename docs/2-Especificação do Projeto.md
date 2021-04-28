@@ -26,7 +26,13 @@ Anderson percebeu o quão pouco sabe sobre estes povos e decidiu buscar a fundo 
 - Como indígena, quero relatar ameaças que minha comunidade vem recebendo por parte de fazendeiros.
 - Como indígena, quero encontrar relatos de ocorrências em outras comunidades para poder entrar em contato com essas comunidades.
 
-2 - Como pesquisadora, quero conhecer mais sobre as relações sociais dentro de uma tribo e contribuir para a manutenção das mesmas.
+
+Eu como pesquisadora :
+
+- Gostaria de colher informações culturais confiáveis das tribos indígenas que pretendo estudar.
+- Gostaria de poder pesquisar a respeito de ameaças que as tibos possam estar sofrendo.
+- Gostaria de me relacionar diretamente com tribos que estão longe de mim.
+- Gostaria de me inteirar da vida cotidiana das tribos em que fazer isso pessoalmente seja muito complicado.
 
 
 Eu como um cidadão:
