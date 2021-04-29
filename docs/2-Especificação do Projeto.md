@@ -65,6 +65,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| Permitir que o usuário busque por conteúdo | ALTA |
 |RF-005| Feed com atualizações dos usuários indígenas cadastrados | MÉDIA |
 |RF-006| Troca de mensagens entre usuários indígenas e outros | ALTA |
+|RF-007| Inclusão de dados para criação de perfil | MÉDIA |
+|RF-008| Inserção/edição de texto e documentos em página dedicada a cada tribo  | ALTA |
+|RF-009| Assinalar em mapa georreferenciado a localidade de cada tribo  | MÉDIA |
 
 ### Requisitos não Funcionais
 
