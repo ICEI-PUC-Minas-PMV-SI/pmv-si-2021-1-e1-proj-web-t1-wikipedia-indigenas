@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Para cada nova funcionalidade a ser desenvolvida, é preciso criar um novo branch. Durante a construção dessa feature, commits parciais podem ser enviados à branch `dev`. Ao fim da construção dessa funcionalidade, um `pull request` deve ser feito à branch `test`. Quando aprovada nos testes, pode ser realizado o merge com o branch `master`. 
 
 ## Controle de Versão
 
@@ -11,11 +11,10 @@ A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
 
-O projeto segue a seguinte convenção para o nome de branchs:
+O projeto segue a seguinte convenção para o nome de branches:
 
 - `master`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
+- `test`: versão já testada do software, porém instável
 - `dev`: versão de desenvolvimento do software
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
