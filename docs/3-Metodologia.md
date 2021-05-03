@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Para cada nova funcionalidade a ser desenvolvida, é preciso criar um novo branch. Durante a construção dessa feature, commits parciais podem ser enviados à branch `dev`. Ao fim da construção dessa funcionalidade, um `pull request` deve ser feito à branch `test`. Quando aprovada nos testes, pode ser realizado o merge com o branch `master`. 
+Para cada nova funcionalidade a ser desenvolvida, é preciso criar um novo branch. Durante a construção dessa feature, commits parciais podem ser enviados à branch `dev`. Ao fim da construção dessa funcionalidade, um `pull request` deve ser feito à branch `test`. Quando aprovada nos testes, pode ser realizado o merge com o branch `main`. 
 
 ## Controle de Versão
 
@@ -13,7 +13,7 @@ foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
-- `master`: versão estável já testada do software
+- `main`: versão estável já testada do software
 - `test`: versão já testada do software, porém instável
 - `dev`: versão de desenvolvimento do software
 
