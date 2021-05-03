@@ -22,6 +22,8 @@ Anderson percebeu o quão pouco sabe sobre estes povos e decidiu buscar a fundo 
 
 ## Histórias de Usuários
 
+Eu como indígena :
+
 - Como indígena, quero divulgar meu trabalho para que qualquer pessoa possa encontrar.
 - Como indígena, quero relatar ameaças que minha comunidade vem recebendo por parte de fazendeiros.
 - Como indígena, quero encontrar relatos de ocorrências em outras comunidades para poder entrar em contato com essas comunidades.
@@ -35,21 +37,13 @@ Eu como pesquisadora :
 - Gostaria de me inteirar da vida cotidiana das tribos em que fazer isso pessoalmente seja muito complicado.
 
 
-Eu como um cidadão:
+Eu como um cidadão :
+
 - Gostaria de encontrar pessoas que compartilham hábitos, valores culturais, estilos musicais e ideologias políticas igual a minha.
 - Gostaria de visualizar o perfil de pessoas de outras tribos.
 - Gostaria de me conectar com indígenas da minha idade, trocar informações e fazer amigos.
 - Gostaria de conhecer a histórias de outras tribos.
 
-
-
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -61,13 +55,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----|
 |RF-001| Permitir que o usuário cadastre seu trabalho | ALTA | 
 |RF-002| Permitir que o usuário registre ameaças à sua comunidade   | ALTA |
-|RF-003| Listar ocorrências registradas por comunidades | MÉDIA | 
-|RF-004| Permitir que o usuário busque por conteúdo | ALTA |
-|RF-005| Feed com atualizações dos usuários indígenas cadastrados | MÉDIA |
-|RF-006| Troca de mensagens entre usuários indígenas e outros | ALTA |
-|RF-007| Inclusão de dados para criação de perfil | MÉDIA |
-|RF-008| Inserção/edição de texto e documentos em página dedicada a cada tribo  | ALTA |
-|RF-009| Assinalar em mapa georreferenciado a localidade de cada tribo  | MÉDIA |
+|RF-003| Permitir que o usuário busque por conteúdo | ALTA |
+|RF-004| Troca de mensagens entre usuários indígenas e outros | ALTA |
+|RF-005| Inserção/edição de texto e documentos em página dedicada a cada tribo  | ALTA |
+|RF-006| Assinalar em mapa georreferenciado a localidade de cada tribo  | MÉDIA |
+|RF-007| Listar ocorrências registradas por comunidades | MÉDIA | 
+|RF-008| Feed com atualizações dos usuários indígenas cadastrados | MÉDIA |
+|RF-009| Inclusão de dados para criação de perfil | MÉDIA |
+
 
 ### Requisitos não Funcionais
 
@@ -102,7 +97,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
