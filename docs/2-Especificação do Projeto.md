@@ -61,20 +61,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----|
 |RF-001| Permitir que o usuário cadastre seu trabalho | ALTA | 
 |RF-002| Permitir que o usuário registre ameaças à sua comunidade   | ALTA |
-|RF-003| Listar ocorrências registradas por comunidades | MÉDIA | 
+|RF-003| Inserção/edição de texto e documentos em página dedicada a cada tribo  | ALTA |
 |RF-004| Permitir que o usuário busque por conteúdo | ALTA |
-|RF-005| Feed com atualizações dos usuários indígenas cadastrados | MÉDIA |
-|RF-006| Troca de mensagens entre usuários indígenas e outros | ALTA |
+|RF-005| Troca de mensagens entre usuários indígenas e outros | ALTA |
+|RF-006| Feed com atualizações dos usuários indígenas cadastrados | MÉDIA |
 |RF-007| Inclusão de dados para criação de perfil | MÉDIA |
-|RF-008| Inserção/edição de texto e documentos em página dedicada a cada tribo  | ALTA |
+|RF-008| Listar ocorrências registradas por comunidades | MÉDIA |
 |RF-009| Assinalar em mapa georreferenciado a localidade de cada tribo  | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Conexão de internet de no mínimo 10MB | ALTA |
+|RNF-002| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-003| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
