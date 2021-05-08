@@ -44,18 +44,19 @@ Apresente a divisão de papéis entre os membros do grupo.
 A ferramenta de gestão de projetos utilizada é o [Github Projects](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2021-1-e1-proj-web-t1-wikipedia-indigenas/projects/1)
 
 O Kanban está dividido entre as seguintes etapas:
-#### Backlog
-  Lista de histórias a serem priorizadas.
-  
-#### To Do
-  Quando um desenvolvedor atribui pra si uma tarefa, ele deve movê-la para `To Do`.
 
-#### In Progress
-  Ao início do desenvolvimento de uma tarefa, ela deve ser movida para `In Progress`.
+**Backlog**
+- Lista de histórias a serem priorizadas.
+  
+**To Do**
+- Quando um desenvolvedor atribui pra si uma tarefa, ele deve movê-la para `To Do`.
+
+**In Progress**
+- Ao início do desenvolvimento de uma tarefa, ela deve ser movida para `In Progress`.
   Ao término, à branch com a feature desenvolvida deve ser submetida à avaliação do time através de um `pull request`.
 
-#### Done
-  Quando um `pull request` é aprovado, e seu conteúdo integrado à branch `main`, uma história deve ser movida para o status `Done`.  
+**Done**
+- Quando um `pull request` é aprovado, e seu conteúdo integrado à branch `main`, uma história deve ser movida para o status `Done`.  
   
 
 
@@ -63,18 +64,13 @@ O Kanban está dividido entre as seguintes etapas:
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de diagramação
+- Sublime Text, Visual Studio
+- Github
+- Microsoft Teams
+- Figma
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+Cada desenvolvedor tem autonomia para eleger o editor de código de sua preferência. 
+Para gestão do versionamento do código, é utilizado o Github. 
+A ferramenta de comunicação preferencial é o Microsoft Teams.
+Para o desenvolvimento de protótipos de baixa e alta fidelidade, é utilizado o Figma.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
