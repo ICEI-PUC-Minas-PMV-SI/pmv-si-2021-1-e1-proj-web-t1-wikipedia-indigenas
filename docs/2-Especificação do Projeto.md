@@ -53,15 +53,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre seu trabalho | ALTA | 
-|RF-002| Permitir que o usuário registre ameaças à sua comunidade   | ALTA |
-|RF-003| Inserção/edição de texto e documentos em página dedicada a cada tribo  | ALTA |
-|RF-004| Permitir que o usuário busque por conteúdo | ALTA |
-|RF-005| Troca de mensagens entre usuários indígenas e outros | ALTA |
-|RF-006| Feed com atualizações dos usuários indígenas cadastrados | MÉDIA |
+|RF-004| Permitir que o usuário encontre páginas de comunidades | ALTA |
+|RF-010| Permitir que o usuário encontre dados sobre terras indígenas por região do brasil | ALTA |
+|RF-011| Permitir que o usuário encontre etnias por matriz linguística | ALTA |
+|RF-001| Permitir que um membro de comunidade cadastre seu trabalho | MÉDIA | 
+|RF-002| Permitir que o usuário registre ameaças à sua comunidade   | MÉDIA |
+|RF-003| Inserção/edição de texto e documentos em página dedicada a cada tribo  | MÉDIA |
 |RF-007| Inclusão de dados para criação de perfil | MÉDIA |
 |RF-008| Listar ocorrências registradas por comunidades | MÉDIA |
-|RF-009| Assinalar em mapa georreferenciado a localidade de cada tribo  | MÉDIA |
+|RF-006| Feed com atualizações dos usuários indígenas cadastrados | BAIXA |
+|RF-005| Troca de mensagens entre usuários indígenas e outros | BAIXA |
 
 
 ### Requisitos não Funcionais
