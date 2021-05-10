@@ -1,7 +1,6 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 Para cada nova funcionalidade a ser desenvolvida, é preciso criar um novo branch. Durante a construção dessa feature, commits parciais podem ser enviados à branch `dev`. Ao fim da construção dessa funcionalidade, um `pull request` deve ser feito à branch `test`. Quando aprovada nos testes, pode ser realizado o merge com o branch `main`. 
 
@@ -31,12 +30,16 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+- Product owner:
+Eliane Lessa
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+
+- Scrum master:
+Eric Mantoani
+
+
+- Developers:
+Alex Pantolfo, Eduardo Lara e Vitor Bergami
 
 
 ### Processo
