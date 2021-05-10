@@ -70,10 +70,10 @@ As ferramentas empregadas no projeto são:
 - Sublime Text, Visual Studio
 - Github
 - Microsoft Teams
-- Figma
+- Miro, Figma
 
 Cada desenvolvedor tem autonomia para eleger o editor de código de sua preferência. 
 Para gestão do versionamento do código, é utilizado o Github. 
 A ferramenta de comunicação preferencial é o Microsoft Teams.
-Para o desenvolvimento de protótipos de baixa e alta fidelidade, é utilizado o Figma.
+Para o desenvolvimento de protótipos de baixa fidelidade é utilizado o Miro, para alta fidelidade, sugere-se o Figma.
 
