@@ -15,6 +15,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 - Eliane Lessa
 - Eric Mantoani 
 - Vitor Bergami
+- Mariana Carmona
 
 ## Professor
 
