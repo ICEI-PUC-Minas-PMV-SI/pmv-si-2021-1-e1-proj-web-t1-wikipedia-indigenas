@@ -18,7 +18,7 @@ var Home = {
 	},
 
 	mainImage: () => {
-		document.getElementById('main-image').style.backgroundImage = `url('${Home.mainImages[random(0,2)]}')`;
+		document.getElementById('main-image').style.backgroundImage = `url('${Home.mainImages[random(0,3)]}')`;
 	}
 }
 
