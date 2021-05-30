@@ -18,11 +18,11 @@ main>section h2 {
 }
 
 .card {
-    width: 400px;
+    /* width: 400px; */
     height: 500px;
 }
 
-.card-deck a {
+.card-container a {
     text-decoration: none;
     color: black;
 }
@@ -35,6 +35,22 @@ main>section h2 {
     height: 200px;
 }
 
-.container {
+
+/* .container {
     margin: 40px;
+} */
+
+@media screen and (max-width: 991px) {
+    .card-container {
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 575px) {
+    .col-md-4 {
+        width: 50%;
+    }
+    .colum1 {
+        margin-left: 25%;
+    }
 }
