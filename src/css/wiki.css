@@ -54,3 +54,25 @@ main>section h2 {
         margin-left: 25%;
     }
 }
+
+
+.titulo
+{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+.mapa{
+    width: 1500px;
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    padding-bottom: 30px;
+}
+
+@media(max-width: 768px){
+    .mapa{
+            width: 100%;
+        }
+}
