@@ -8,6 +8,6 @@ O fluxo privilegia o encontro de informações sobre comunidades indígenas, lis
 
 Além da página de conteúdo, há funcionalidades para entrar em contato com cada comunidade, ou para membros das comunidades registrarem ocorrências. É possível chegar a essas funcionalidades pela home ou pela página de uma determinada comunidade.
 
-![Screen Shot 2021-05-17 at 18 22 38](https://user-images.githubusercontent.com/1257868/118558515-1d749600-b73d-11eb-9044-f8056dd702e2.png)
+![Screen Shot 2021-06-02 at 18 12 56](https://user-images.githubusercontent.com/1257868/120552894-341e1c80-c3ce-11eb-8e2a-5d95f13029a5.png)
 
 
