@@ -9,7 +9,7 @@ body>header>#main-image {
     background-size: cover;
 }
 
-main>section {
+main > section {
     padding-top: 2rem;
 }
 
@@ -47,4 +47,26 @@ main>section h2 {
     .colum1 {
         margin-left: 25%;
     }
+}
+
+
+.titulo
+{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+.mapa{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    padding-bottom: 30px;
+}
+
+@media(max-width: 768px){
+    .mapa{
+            width: 90%;
+        }
 }
