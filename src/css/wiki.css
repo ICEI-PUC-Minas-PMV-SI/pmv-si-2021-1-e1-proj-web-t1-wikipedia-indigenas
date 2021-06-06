@@ -1,4 +1,4 @@
-body>header>h1 {
+body>header>nav.navbar>h1 {
     padding: 0.2rem 1rem;
     font-size: 2rem;
 }
@@ -9,7 +9,28 @@ body>header>#main-image {
     background-size: cover;
 }
 
-main > section {
+.searchBar {
+    margin-right: 2%;
+    width: 16rem;
+    border-radius: 5%;
+}
+
+#search-addon {
+    height: 3rem;
+}
+
+#search-addon a {
+    text-decoration: none;
+    color: black;
+}
+
+#search {
+    border: 0;
+    background-color: transparent;
+    padding-right: 0;
+}
+
+main>section {
     padding-top: 2rem;
 }
 
@@ -44,20 +65,17 @@ main>section h2 {
     .home .cards .col-md-4 {
         width: 50%;
     }
-    .colum1 {
+    .column1 {
         margin-left: 25%;
     }
 }
 
-
-.titulo
-{
+.titulo {
     padding-bottom: 30px;
     text-align: center;
 }
 
-
-.mapa{
+.mapa {
     width: 90%;
     display: block;
     margin: 0 auto;
@@ -65,8 +83,8 @@ main>section h2 {
     padding-bottom: 30px;
 }
 
-@media(max-width: 768px){
-    .mapa{
-            width: 90%;
-        }
+@media(max-width: 768px) {
+    .mapa {
+        width: 90%;
+    }
 }
