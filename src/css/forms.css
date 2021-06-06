@@ -1,0 +1,20 @@
+body.forms h4{
+  margin-top: 2rem;
+}
+
+body.forms .container form * {
+  display: block;
+  width: 100%;
+}
+
+body.forms .container form label{
+  margin-top: 1rem;
+}
+
+body.forms .container form textarea{
+  min-height: 12rem ;
+}
+
+body.forms .container form button{
+  margin-top: 3rem;
+}
