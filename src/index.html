@@ -5,30 +5,53 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/wiki.css">
+    <link rel="shortcut icon" type="image/ico" href=https://i.imgur.com/TsV8wPs.png>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+
+
+
+
 </head>
 
-<body class="home">
+<body class="body">
     <header>
-        <h1>Wiki Indígenas</h1>
-        <div id="main-image"></div>
-    </header>
+    <nav class="navbar  navbar-light navbar-expand-sm color-bg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Wikipédia Indígena</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Encontre uma comunidade</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Comunidades em destaque</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Terras indígenas do Brasil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"></a></li>
+      </ul>
+      </div>
+  </div>
+</nav>
+<div id="main-image"></div>
+  </header>
     <main>
-        <!-- Encontre uma comunidade-->
         <section>
             <h2 class="titulo">Encontre uma comunidade</h2>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button id="nome" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por nome</button>
-                <button id="lingua" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por família linguística</button>
-                <button id="localidade" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por localidade</button>
+                <button id="nome" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">Por nome</button>
+                <button id="lingua" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">Por família linguística</button>
+                <button id="localidade" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">Por localidade</button>
               </div>
               <div id="tribos"></div>
         </section>
 
+
+        <section>
+            <h2 class="titulo">Encontre uma comunidade</h2>
+        </section>
+
         <!-- comunidades em destaque-->
-
-                <section class="cards">
-            <h2 class="titulo">Comunidades em destaque</h2>
-
+        <h2 class="titulo">Comunidades em destaque</h2>
             <div class="container">
                 <div class=row>
                     <div class="card-container col-md-4 col-sm-6">
@@ -71,6 +94,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- </div> -->
             </div>
         </section>
 
@@ -82,7 +106,63 @@
             <iframe class="mapa" src="https://mapa.eco.br/v1/?lang=pt-br&amp;layers%5B%5D=tis.markers&amp;layers%5B%5D=tis.limits&amp;layers%5B%5D=jurisdicao.amlegal&amp;baseLayer=base.topographic&amp;center%5B%5D=-5.943899579425587&amp;center%5B%5D=-58.50219726562501&amp;zoom=4&amp;minZoom=4&amp;maxZoom=15">
             </iframe>
 
+            <i class="fa fa-camera-retro fa-lg">
+
         </section>
+
+
+<section class="">
+  <!-- Footer -->
+  <footer class="color-bg text-black text-center text-md-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="titulo-footer">Sobre nós</h5>
+
+          <p>
+               Conteúdo
+                            
+          </p>
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="titulo-footer ">Links</h5>
+          <ul class="list-unstyled footer">
+              <li><a href="#!" >Encontre uma comunidade</a></li>
+              <li><a href="#!" >Comunidades em destaque</a></li>
+              <li><a href="#!" >Terras indígenas do Brasil</a></li>
+              <li><a href="#!" >Cadastre sua comunidade</a></li>
+              <li><a href="#!" >Ocorrências</a></li>
+          </ul>
+        </div>
+
+
+
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="titulo-footer ">Sociais</h5>
+          <ul class="list-unstyled footer ">
+            <li><a href="#!" >Link 1</a></li>
+            <li><a href="#!" >Link 2</a></li>
+            <li><a href="#!" >Link 3</a></li>
+            <li><a href="#!" >Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white " style="text-decoration: none;">Wikipédia Indígena</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+</section>
+
+
+
 
     </main>
 </body>
