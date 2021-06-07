@@ -1,6 +1,8 @@
-body>header>h1 {
-  padding: 0.2rem 1rem;
-  font-size: 2rem;
+
+body>header>nav.navbar>h1 {
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
+
 }
 
 body>header>#main-image {
@@ -9,9 +11,39 @@ body>header>#main-image {
   background-size: cover;
 }
 
-main > section {
-  padding-top: 2rem;
+
+.margem {
+    margin: 2rem 5.5rem;
 }
+
+.searchBar {
+    margin-right: 2%;
+    width: 17rem;
+    border-radius: 5%;
+}
+
+div.container>a {
+    text-decoration: none;
+    color: black;
+}
+
+#search-addon {
+    height: 3rem;
+}
+
+#search-addon a {
+    text-decoration: none;
+    color: black;
+}
+
+#search {
+    border: 0;
+    background-color: transparent;
+    padding-right: 0;
+}
+
+main>section {
+    padding-top: 2rem;
 
 main>section h2 {
   padding: 0 2rem;
@@ -41,27 +73,27 @@ main>section h2 {
 }
 
 @media screen and (max-width: 991px) and (min-width: 575px) {
-  .home .cards .col-md-4 {
-    width: 50%;
-  }
-  .colum1 {
-    margin-left: 25%;
-  }
+    .home .cards .col-md-4 {
+        width: 50%;
+    }
+    .column1 {
+        margin-left: 25%;
+    }
 }
 
-
-.titulo{
-  padding-bottom: 30px;
-  text-align: center;
+.titulo {
+    padding-bottom: 30px;
+    text-align: center;
 }
 
-.mapa{
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  height: 600px;
-  padding-bottom: 30px;
+.mapa {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    padding-bottom: 30px;
 }
+
 
 @media(max-width: 768px){
   .mapa{
@@ -72,7 +104,7 @@ footer{
   display: block;
   min-height: 5rem;
 }
-=======
+
 .btn-group{
     padding-left: 37% ;
 }
