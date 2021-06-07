@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+        <script type="text/javascript" src="./js/bootstrap.min.js" ></script>
+        <!--
+            ****** ATENÇÃO ******
+            A linha abaixo importa o Javascript que implementa as funcionalidades dessa aplicação.
+            Edite o arquivo ./js/scripts.js para compreender como a implementação funciona
+        -->
+        <script type="text/javascript" src="./js/scripts.js" ></script>   
+    </head>
+    
+    <body>        
+        <h1>Maxakali</h1>
+        <session> 
+            <!--
+                Container contendo o menu de navegação
+            -->
+            <div class="container" >
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Entre em contato com a comunidade</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        </li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="menuRelatorioInner();">Nome (innerHTML)</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="menuRelatorioDOM();">Nome (DOM)</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+           <!--
+                Abaixo são definidos os containeres das interfaces de cadastro.
+                Apenas uma é apresentada ao usuário em um determinado momento em função da navegação no menu.
+                A apresentação da interface na tela é feita por meio da classe d-none
+            -->
+
+            <!--
+                Container contendo a interface de cadastro
+            -->
+            <div class="container" id="cadastro">
+                <div class="row">                    
+                    <div class="col-12 mt-3 col-sm-6">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" name="nome" id="nome">
+                    </div>                    
+                </div>
+                <div class="row">                    
+                    <div class="col-12 mt-3 col-sm-6">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                <div class="row">                    
+                    <div class="col-12 mt-3 col-sm-6">
+                        <label for="msg" class="form-label">Escreva sua mensagem</label>
+                        <input type="msg" class="form-control" name="msg" id="msg">
+                    </div>                    
+                </div>
+                <div class="row"> 
+                   <div class="col-12 mt-3 col-sm-3">
+                <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+        </session>
+
+        <!--
+            Modal apresentada no momento que dados são enviados
+        -->
+        <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Seus dados foram enviados!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--
+            Script que atualiza a variável "atual" com o container de cadastro
+        -->
+        <script>
+            atual=document.getElementById("cadastro");     
+        </script>
+    </body>
+</html>
