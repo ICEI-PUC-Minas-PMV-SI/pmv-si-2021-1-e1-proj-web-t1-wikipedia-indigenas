@@ -69,8 +69,15 @@ main>section h2 {
   } 
 }
 
-
 footer{
   display: block;
   min-height: 5rem;
 }
+=======
+.btn-group{
+    padding-left: 37% ;
+}
+
+/* #tribos {
+    font-size: x-large;
+} */
