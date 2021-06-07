@@ -94,11 +94,11 @@ main>section h2 {
     padding-bottom: 30px;
 }
 
-@media(max-width: 768px) {
-    .mapa {
-        width: 90%;
-    }
-}
+
+@media(max-width: 768px){
+  .mapa{
+    width: 90%;
+  } 
 
 footer{
   display: block;
