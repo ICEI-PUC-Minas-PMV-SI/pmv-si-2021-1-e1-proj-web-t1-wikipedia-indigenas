@@ -9,6 +9,10 @@ body>header>#main-image {
     background-size: cover;
 }
 
+.margem {
+    margin: 2rem 5.5rem;
+}
+
 .searchBar {
     margin-right: 2%;
     width: 17rem;
