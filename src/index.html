@@ -9,22 +9,42 @@
 
 <body class="home">
     <header>
-        <h1>Wiki Indígenas</h1>
+        <nav class="navbar">
+            <h1>Wiki Indígenas</h1>
+            <div class="searchBar">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button id="search">
+                            <span class="input-group-text border-0" id="search-addon">
+                                <a href="busca.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg></a>
+                            </span>
+                        </button>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Encontre sua comunidade">
+                </div>
+            </div>
+        </nav>
         <div id="main-image"></div>
     </header>
     <main>
         <!-- Encontre uma comunidade-->
         <section>
             <h2 class="titulo">Encontre uma comunidade</h2>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button id="nome" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por nome</button>
+                <button id="lingua" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por família linguística</button>
+                <button id="localidade" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por localidade</button>
+            </div>
+            <div id="tribos"></div>
         </section>
 
         <!-- comunidades em destaque-->
-<<<<<<< HEAD
+
         <section class="cards">
-            <h2>Comunidades em destaque</h2>
-=======
-        <h2 class="titulo">Comunidades em destaque</h2>
->>>>>>> 616bc0a8143b610e6233f74760c9211b008960c3
+            <h2 class="titulo">Comunidades em destaque</h2>
+
             <div class="container">
                 <div class=row>
                     <div class="card-container col-md-4 col-sm-6">
@@ -53,7 +73,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class=" colum1 card-container col-md-4 col-sm-6 ">
+                    <div class=" column1 card-container col-md-4 col-sm-6 ">
                         <div>
                             <a href="# ">
                                 <div class="card ">
