@@ -13,11 +13,6 @@ API para consulta e cadastro de dados do projeto Wiki API
 - Novo serviço `[POST] /wiki/ocorrencias/create` para registro de ocorrências em comunidades
 - Novo serviço `[POST] /wiki/comunidade/create` para registro de novas comunidades
 
--------------
-
-#### Índice
-
-[TOC]
 
 ------------
 
@@ -25,7 +20,7 @@ API para consulta e cadastro de dados do projeto Wiki API
 
 **produção**
 
-    https://wiki.previa.app/
+    https://wiki.previa.app/api
 
 ------------
 
