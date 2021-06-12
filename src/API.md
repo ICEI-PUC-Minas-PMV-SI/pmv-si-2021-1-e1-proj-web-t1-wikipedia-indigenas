@@ -31,7 +31,7 @@ Lista todo conteúdo, com possibilidade de filtros a partir dos parâmetros desc
 
 `GET /search`
 
-#### Parâmetros
+#### Parâmetros GET
 
 | key | type/format | mandatory | format | default | description | 
 |-----|-------------|-----------|--------|---------|-------------|
@@ -46,7 +46,7 @@ Lista todo conteúdo, com possibilidade de filtros a partir dos parâmetros desc
 
 
 #### Exemplo
-    curl --location --request GET 'https://wiki.previa.app/api/search/' 
+    curl --location --request GET 'https://wiki.previa.app/api/search/?fq=module:comunidade&sort=titleAlpha%20ASC&start=0&rows=3' 
 
 
 #### Resposta
