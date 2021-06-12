@@ -127,7 +127,7 @@ Endpoint para cadastro de uma nova comunidade
 `POST /wiki/ocorrencias/create`
 
 
-####Objeto
+#### Objeto
 No corpo da requisição `body-raw` deve ser enviado um objeto `data` conforme exemplo abaixo
 
 ```
@@ -142,7 +142,7 @@ No corpo da requisição `body-raw` deve ser enviado um objeto `data` conforme e
 }
 ```
 
-#####Propriedades
+##### Propriedades
 |key|type/format|mandatory|description|
 | ------------ | ------------ | ------------ | ------------ |
 |**name**|*string*| obrigatório | slug de uma comunidade previamente cadastrada |
