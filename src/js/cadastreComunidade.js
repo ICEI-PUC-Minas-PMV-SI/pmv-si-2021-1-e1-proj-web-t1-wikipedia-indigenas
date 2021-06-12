@@ -19,7 +19,7 @@ form.addEventListener('submit', (e) => {
     data: Form.data(form) // obtem o JSON dos dados do formulário e atribui a um objeto data, esperado pela API
   }
 
-  fetch('http://api.wiki.local/wiki/comunidade/create', {
+  fetch('https://wiki.previa.app/api/wiki/comunidade/create', {
     method: 'POST', // API espera envio por método POST
     headers: {
       'Content-type': 'application/json' // API espera receber conteúdo do tipo JSON
