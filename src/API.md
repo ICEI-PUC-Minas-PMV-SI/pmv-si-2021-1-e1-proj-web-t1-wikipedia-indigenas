@@ -32,10 +32,11 @@ Lista todo conteúdo, com possibilidade de filtros a partir dos parâmetros desc
 `GET /search`
 
 #### Parâmetros
-|key|type/format|mandatory|format|default|description|
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-|**q**|*string*| opcional | *valor* OU *chave:valor*  | \*:\*  | query, termos a serem buscados |
-|**fq**|*string*| opcional | *chave:valor*  | \*:\*  | filtro de query |
+
+| key | type/format | mandatory | format | default | description | 
+|-----|-------------|-----------|--------|---------|-------------|
+| **q** | *string* | opcional | *valor* OU *chave:valor*  | \*:\*  | query, termos a serem buscados | 
+| **fq** | *string* | opcional | *chave:valor*  | \*:\*  | filtro de query |
 |**fl**|*string*| opcional | *campo1,campo2...* (campos separados por vírgula)  | *  | campos que devem aparecer no resultado |
 |**start**|*int*| opcional | *int*  | 0  | índice de início dos resultados |
 |**rows**|*int*| opcional  | *int*  | 30  | quantidade de resultados  | 
