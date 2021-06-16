@@ -28,9 +28,13 @@
         border-radius: 5%;
     }
     
-    div.container>a {
+    div.container>h3>a {
         text-decoration: none;
         color: black;
+    }
+    
+    .distanciamento {
+        margin-bottom: 2rem;
     }
     
     #search-addon {
