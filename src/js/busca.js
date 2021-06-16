@@ -41,7 +41,7 @@ searchBar.addEventListener('keyup', (e) => {
 
             tpl +=
                 `<div class="container distanciamento">
-                 <h3><a href=#>${tribo.name}</a></h3>
+                 <h3><a href=index.html?name=${tribo}>${tribo.name}</a></h3>
              ${tribo.paragrafo}
              </div>`
         });
