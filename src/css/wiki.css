@@ -24,6 +24,10 @@
         color: black;
     }
     
+    .distanciamento {
+        margin-bottom: 2rem;
+    }
+    
     #search-addon {
         height: 3rem;
     }
