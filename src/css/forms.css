@@ -18,3 +18,13 @@ body.forms .container form textarea{
 body.forms .container form button{
   margin-top: 3rem;
 }
+
+
+.alinhar-centro{
+  margin: auto;
+  width: 50%;
+}
+
+.espaco{
+  padding-top: 10px;
+}

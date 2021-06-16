@@ -151,3 +151,23 @@ i {
     color: black;
 }
 
+/*########################################################*/
+/*#################### OCORRÊNCIAS #######################*/
+/*########################################################*/
+
+
+.for_box_bg {
+     /*background: #052501;*/
+      padding: 50px 0px;
+ }
+.for_box_bg .for_box {
+     text-align: center; 
+     box-sizing: border-box;
+}
+.for_box_bg .for_box span {
+     font-weight: bold; 
+     font-size:51px; 
+     /*line-height: 51px;*/ 
+     display: block;
+     padding: 20px 0px;
+}
