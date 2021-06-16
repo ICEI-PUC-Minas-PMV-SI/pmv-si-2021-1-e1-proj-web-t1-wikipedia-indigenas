@@ -13,11 +13,13 @@ loadtribes();
 
 searchBar.addEventListener('keyup', (e) => {
     var searchString = (e.target.value.toLowerCase());
+    var buscafinal = searchString.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     var filteredtribes = s.filter(valortribo => {
         return (
-            ((valortribo.hasOwnProperty('familiaLinguistica')) ? valortribo.localizacao.toLowerCase().includes(searchString) : false) ||
-            ((valortribo.hasOwnProperty('localizacao')) ? valortribo.localizacao.toLowerCase().includes(searchString) : false) ||
-            valortribo.name.toLowerCase().includes(searchString)
+            ((valortribo.hasOwnProperty('familiaLinguistica')) ? valortribo.localizacao.toLowerCase().includes(buscafinal) : false) ||
+            ((valortribo.hasOwnProperty('localizacao')) ? valortribo.localizacao.toLowerCase().includes(buscafinal) : false) ||
+            valortribo.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(buscafinal)
+
         );
     });
     var tamanho = filteredtribes.length;
