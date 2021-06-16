@@ -16,30 +16,33 @@
     <main>
         
       <section>
-        <h2 class="titulo">Cadastre sua comunidade</h2>
+        <h2 class="titulo">Registrar ocorrência</h2>
 
         <div class="container">
-          <form>
+          <form id="registrarOcorrencia">
             <h4>Dados da comunidade</h4>
             
-            <label for="localizacao">Selecione a comunidade</label>
-            <select name="localizacao">
-              <option value="Selecione"></option>
+            <label for="name">Selecione a comunidade</label>
+            <select name="name">
+              <option value="">Selecione</option>
             </select>
 
-            <label for="localizacao">Tipo de ocorrência</label>
-            <select name="localizacao">
-              <option value="Selecione"></option>
+            <label for="ocorrencia">Tipo de ocorrência</label>
+            <select name="ocorrencia">
+              <option value="">Selecione</option>
+              <option value="ameaca">Ameaça</option>
+              <option value="invasao">Invasão</option>
+              <option value="atividadeClandestina">Atividade clandestina</option>
             </select>
 
             <h4>Seus dados</h4>
-            <label for="nome">Seu nome (será mantido em sigilo)</label>
-            <input type="text" name="nome" />
+            <label for="autor">Seu nome (será mantido em sigilo)</label>
+            <input type="text" name="autor" />
             <label for="name">Seu e-mail (será mantido em sigilo)</label>
             <input type="email" name="email" />
 
-            <label for="ocorrencia">Descreva a ocorrência</label>
-            <textarea name="ocorrencia"></textarea>
+            <label for="description">Descreva a ocorrência</label>
+            <textarea name="description"></textarea>
 
             <button type="submit">Cadastrar</button>
           </form>
@@ -54,5 +57,6 @@
 </body>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/scripts.js"></script>
+<script type="module" src="./js/registrarOcorrencia.js"></script>
 
 </html>
