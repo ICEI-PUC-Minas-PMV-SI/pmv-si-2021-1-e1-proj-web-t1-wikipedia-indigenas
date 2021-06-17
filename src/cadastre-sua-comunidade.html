@@ -50,7 +50,7 @@
       <section>
         <h2 class="titulo">Cadastre sua comunidade</h2>
 
-        <div class="container">
+        <!-- <div class="container">
           <form id="cadastreComunidade">
             <h4>Dados da comunidade</h4>
             
@@ -105,14 +105,111 @@
 
             <button type="submit">Cadastrar</button>
           </form>
-        </div>
+        </div> -->
 
+                  <form class="alinhar-centro" id="cadastreComunidade">
+            <div class="form-group">
+              <label for="nome">Nome da comunidade </label>
+              <input type="text" class="form-control" id="nome" name="nome"  placeholder="">
+            </div>
+
+                    <div class="form-group espaco">
+            <label for="autodominacao">Autodenominação  </label>
+            <input type="text" class="form-control" id="autodominacao" name="autodominacao" placeholder="">
+          </div>
+                    <div class="form-group espaco">
+            <label for="localizacao">Família Linguística  </label>
+            <input type="text" class="form-control" id="localizacao" name="localizacao" placeholder="">
+          </div>
+          
+              <div class=" espaco">
+              <label for="localizacao">Principal estado de localização do território </label>
+              <select name="localizacao"   class="form-control form-control-sm">
+              <option selected> Selecione</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+          </select>
+          </div>
+          
+          <div class="form-group espaco">
+            <label for="populacao">Tamanho da População  </label>
+            <input type="text" class="form-control" id="populacao" name="populacao" placeholder="">
+          </div>
       </section>
 
+          <div class="form-group espaco alinhar-centro">
+            <label for="paragrafo">Descreva sua comunidade </label>
+            <textarea class="form-control" id="paragrafo" name="paragrafo" id="paragrafo" rows="3"></textarea>
+          </div>
+            
+          <div class="form-group espaco alinhar-centro">
+              <label for="autor">Nome </label>
+              <input type="text" class="form-control" id="autor" name="autor"  placeholder="">
+            </div>
+          
+          <div class="form-group espaco alinhar-centro">
+              <label for="name">E-mail </label>
+              <input type="email" class="form-control" id="email" name="email"  placeholder="">
+            </div>
+
+            <div class="row"> 
+            <div class="col-12 mt-3 col-sm-3 style btn-group alinhar-centro" style="padding-bottom: 30px;">
+            <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
+            </div>
+        </form>
+        
+        <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Seus dados foram enviados!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
     </main>
+
+    </main>
+
+
+
+
+<!--Footer-->
 <section class="">
-  <!-- Footer -->
-  <footer class="color-bg text-black text-center text-md-start">
+    <footer class="color-bg text-black text-center text-md-start">
     <div class="container p-4">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -123,7 +220,7 @@
                             
           </p>
         </div>
-        <!--Grid column-->
+        <!--Footer-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="titulo-footer ">Links</h5>
           <ul class="list-unstyled footer">

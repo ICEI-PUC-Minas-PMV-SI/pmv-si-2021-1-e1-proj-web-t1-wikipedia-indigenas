@@ -48,7 +48,7 @@
     </header>
     <main>
         
-      <section>
+<!--       <section>
         <h2 class="titulo">Registrar ocorrência</h2>
 
         <div class="container">
@@ -81,11 +81,81 @@
           </form>
         </div>
 
-      </section>
+      </section> -->
+
+      <section>
+        
+        <h2 class="titulo">Registrar ocorrência</h2>
+        <div class="container">
+          <form id="registrarOcorrencia" class="alinhar-centro">
+            <h4>Dados da comunidade</h4>
+              <label for="name">Selecione a comunidade </label>
+              <select name="name"  class="form-control form-control-sm">
+              <option value="">Selecione</option>
+
+          </select>
+
+          <form id="registrarOcorrencia" class="alinhar-centro">
+            <div class=" espaco">
+              <label for="ocorrencia">Tipo de ocorrência </label>
+              <select name="ocorrencia"   class="form-control form-control-sm">
+              <option value="">Selecione</option>
+              <option value="ameaca">Ameaça</option>
+              <option value="invasao">Invasão</option>
+              <option value="atividadeClandestina">Atividade clandestina</option>
+          </select>
+          </div>
+
+            <h4 class="alinhar-centro">Seus dados</h4>
+          <div class="form-group alinhar-centro">
+              <label for="autor">Nome </label>
+              <input type="text" class="form-control" id="autor" name="autor"  placeholder="">
+            </div>
+          
+          <div class="form-group espaco alinhar-centro">
+              <label for="name">E-mail </label>
+              <input type="email" class="form-control" id="email" name="email"  placeholder="">
+            </div>
+
+          <div class="form-group espaco alinhar-centro">
+            <label for="description">Descreva a ocorrência </label>
+            <textarea class="form-control" id="description" name="description" id="description" rows="3"></textarea>
+          </div>
+        
+
+        </form>
+                  <div class="row"> 
+            <div class="col-10 mt-4 col-sm-4 style btn-group alinhar-centro" style="padding-bottom: 30px;">
+            <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
+            </div>
+
+                    <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Seus dados foram enviados!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
     </main>
+
+
+
+
+
+    </main>
+
+<!--Footer-->
 <section class="">
-  <!-- Footer -->
   <footer class="color-bg text-black text-center text-md-start">
     <div class="container p-4">
       <div class="row">
