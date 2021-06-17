@@ -3,13 +3,27 @@ let tamanho = '';
 let searchString = '';
 const searchBar = document.getElementById('search-bar');
 
+
 async function loadtribes() {
+
+  if(localStorage.getItem('tribos') === null || JSON.parse(localStorage.getItem('counter')) > 9){
+    // não armazenou tribos no Storage
     const res = await fetch('https://wiki.previa.app/api/search/?fl=name,localizacao,paragrafo,familiaLinguistica,slug&rows=999');
     const tribos = await res.json();
     s = tribos.docs;
-    console.log(s);
+    localStorage.setItem('tribos', JSON.stringify(s));
+    localStorage.setItem('counter', 0);
+
+  } else {
+    s = JSON.parse(localStorage.getItem('tribos'));
+    let counter = JSON.parse(localStorage.getItem('counter'));
+    localStorage.setItem('counter', counter+1);    
+  }
+
 }
 loadtribes();
+
+
 
 searchBar.addEventListener('keyup', (e) => {
     var searchString = (e.target.value.toLowerCase());
