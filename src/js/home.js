@@ -1,3 +1,25 @@
+let comunidades = JSON.parse(localStorage.getItem('comunidades'));
+
+let letras = {}
+comunidades.forEach(a => {
+  if(a.slug != undefined){
+    let l = a.slug.slice(0,1).toUpperCase(); 
+    if(!letras.hasOwnProperty(l)){
+      letras[l] = [];  
+    } 
+    letras[l].push(a);  
+  }
+})
+
+
+
+
+
+
+
+
+
+
 var btnNome = document.getElementById('nome');
 btnNome.addEventListener('click', function () {
   clickResponse('nome');
