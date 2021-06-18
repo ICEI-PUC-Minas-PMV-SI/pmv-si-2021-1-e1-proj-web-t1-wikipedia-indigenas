@@ -13,13 +13,6 @@ comunidades.forEach(a => {
 
 
 
-
-
-
-
-
-
-
 var btnNome = document.getElementById('nome');
 btnNome.addEventListener('click', function () {
   clickResponse('nome');
