@@ -31,6 +31,7 @@ const card1 =
        </div>
      </div>
      </a>`
+document.getElementById('card1').innerHTML = card1;
 
 const card2 = `<a href=./tribos/index.html?name=${randomCard2.slug}>
 <div class="card">
@@ -41,6 +42,7 @@ const card2 = `<a href=./tribos/index.html?name=${randomCard2.slug}>
   </div>
 </div>
 </a>`
+document.getElementById('card2').innerHTML = card2;
 
 const card3 = `<a href=./tribos/index.html?name=${randomCard3.slug}>
 <div class="card">
@@ -51,9 +53,6 @@ const card3 = `<a href=./tribos/index.html?name=${randomCard3.slug}>
 </div>
 </div>
 </a>`
-
-document.getElementById('card1').innerHTML = card1;
-document.getElementById('card2').innerHTML = card2;
 document.getElementById('card3').innerHTML = card3;
 
 
