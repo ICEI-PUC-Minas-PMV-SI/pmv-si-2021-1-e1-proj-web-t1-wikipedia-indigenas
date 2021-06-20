@@ -1,12 +1,11 @@
-    .home{
-    color: #222222;
-    font-family: "Poppins",sans-serif;
-    font-size: 14px !important;
-    font-weight: 300 !important;
-    line-height: 1.625em;
+    .home {
+        color: #222222;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        line-height: 1.625em;
     }
-
-
+    
     body>header>nav.navbar>h1 {
         padding: 0.2rem 1rem;
         font-size: 2rem;
@@ -54,6 +53,15 @@
     
     main>section {
         padding-top: 2rem;
+    }
+    
+    .card-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        text-align: justify;
     }
     
     .card {
@@ -113,61 +121,55 @@
             padding-left: 37%;
         }
     }
-
-
-/*########################################################*/
-/*############### HEADER + Footer Background #############*/
-/*########################################################*/
-
-.color-bg{
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-
-.titulo-footer{
-text-transform: uppercase !important;
-text-decoration: none;
-}
-
-
-.footer li a{
-    color: #777777;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
+    /*########################################################*/
+    /*############### HEADER + Footer Background #############*/
+    /*########################################################*/
     
-}
-
-.footer li{
-    margin-bottom: 10px;
-
-}
-
-i {
-      font-style: normal;
-}
-
-.fab{
-    color: black;
-}
-
-/*########################################################*/
-/*#################### OCORRÊNCIAS #######################*/
-/*########################################################*/
-
-
-.for_box_bg {
-     /*background: #052501;*/
-      padding: 50px 0px;
- }
-.for_box_bg .for_box {
-     text-align: center; 
-     box-sizing: border-box;
-}
-.for_box_bg .for_box span {
-     font-weight: bold; 
-     font-size:51px; 
-     /*line-height: 51px;*/ 
-     display: block;
-     padding: 20px 0px;
-}
+    .color-bg {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    .titulo-footer {
+        text-transform: uppercase !important;
+        text-decoration: none;
+    }
+    
+    .footer li a {
+        color: #777777;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    
+    .footer li {
+        margin-bottom: 10px;
+    }
+    
+    i {
+        font-style: normal;
+    }
+    
+    .fab {
+        color: black;
+    }
+    /*########################################################*/
+    /*#################### OCORRÊNCIAS #######################*/
+    /*########################################################*/
+    
+    .for_box_bg {
+        /*background: #052501;*/
+        padding: 50px 0px;
+    }
+    
+    .for_box_bg .for_box {
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .for_box_bg .for_box span {
+        font-weight: bold;
+        font-size: 51px;
+        /*line-height: 51px;*/
+        display: block;
+        padding: 20px 0px;
+    }
