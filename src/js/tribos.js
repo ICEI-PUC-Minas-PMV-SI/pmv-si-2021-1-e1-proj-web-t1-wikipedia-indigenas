@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('a[name="contato"]')
       .setAttribute('href', `../../contato-com-a-comunidade.html?name=${info.slug}`);
 
+    document.querySelector('a[name="cadastre-se"]')
+      .setAttribute('href', `../../cadastre-se-como-contato.html?name=${info.slug}`);
+
     let autor = "";
     info.nomes.forEach((v,k) => {
       if(k > 0){

@@ -9,10 +9,11 @@
     <link rel="shortcut icon" type="image/ico" href=https://i.imgur.com/TsV8wPs.png>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
 </head>
 
-<body class="forms cadastre home">
-   <header>
+<body class="forms ocorrencia home">
+    <header>
         <nav class="navbar  navbar-light navbar-expand-sm color-bg">
             <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Wikipédia Indígena</a>
@@ -47,91 +48,64 @@
     </header>
     <main>
         
-      <section> 
+
+      <section>
+        
         <h2 class="titulo" id="nome-da-tribo"></h2>
-           <!--
-                Abaixo são definidos os containeres das interfaces de cadastro.
-                Apenas uma é apresentada ao usuário em um determinado momento em função da navegação no menu.
-                A apresentação da interface na tela é feita por meio da classe d-none
-            -->
+        <div class="container">
+          <form id="registrarOcorrencia" class="alinhar-centro">
+            <h4>Cadastre-se como contato</h4>
+              <label for="name">Selecione a comunidade </label>
+              <select name="name"  class="form-control form-control-sm">
+              <option value="">Selecione</option>
 
-            <!--
-                Container contendo a interface de cadastro
-            -->
-    <!--         <div class="container " id="cadastro">
-                <div class="row ">                    
-                    <div class="col-12 mt-3 col-sm-6 alinhar-centro">
-                        <label for="nome" class="form-label">Nome:</label>
-                        <input type="text" class="form-control" name="nome" id="nome" />
-                    </div>                    
-                </div>
-                <div class="row">                    
-                    <div class="col-12 mt-3 col-sm-6 alinhar-centro">
-                        <label for="email" class="form-label">E-mail:</label>
-                        <input type="email" class="form-control" name="email" id="email" />
-                    </div>
-                <div class="row">                    
-                    <div class="col-12 mt-3 col-sm-6 alinhar-centro">
-                        <label for="msg" class="form-label">Escreva sua mensagem</label>
-                        <textarea type="msg" class="form-control" name="msg" id="msg"></textarea>                  
-                </div>
-                <div class="row"> 
-                   <div class="col-12 mt-3 col-sm-3 alinhar-centro">
-                <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
-                    </div>
-                </div>
+          </select>
+
+          <form id="registrarOcorrencia" class="alinhar-centro">
+            
+
+            <h4 class="alinhar-centro">Seus dados</h4>
+          <div class="form-group alinhar-centro">
+              <label for="autor">Nome </label>
+              <input type="text" class="form-control" id="autor" name="autor"  placeholder="">
             </div>
- -->
-
-            <form class="alinhar-centro" id="contatoComunidade">
-              <input type="hidden" name="name" id="name"  />
-  <div class="form-group">
-    <label for="nome">Nome </label>
-    <input type="text" class="form-control" id="nome" name="nome"  placeholder="">
-  </div>
-
-    <div class="form-group espaco">
-    <label for="email">Endereço de email </label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="">
-  </div>
-  
-  <div class="form-group espaco">
-    <label for="msg">Escreva sua mensagem </label>
-    <textarea class="form-control" id="msg" name="msg" id="msg" rows="3"></textarea>
-  </div>
-    <div class="row"> 
-     <div class="col-12 mt-3 col-sm-3 style btn-group">
-    <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
-    </div>
-</form>
-        </section>
-
-        <!--
-            Modal apresentada no momento que dados são enviados
-        -->
-        <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  Seus dados foram enviados!
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
-                </div>
-              </div>
+          
+          <div class="form-group espaco alinhar-centro">
+              <label for="name">E-mail </label>
+              <input type="email" class="form-control" id="email" name="email"  placeholder="">
             </div>
-        </div>
+
+          <div class="form-group espaco alinhar-centro">
+              <label for="name">Telefone </label>
+              <input type="telefone" class="form-control" id="telefone" name="telefone"  placeholder="">
+            </div>
+
+          <div class="form-group espaco alinhar-centro">
+            <label for="description">Mensagem </label>
+            <textarea class="form-control" id="description" name="description" id="description" rows="3"></textarea>
+          </div>
+
+          <div class="row"> 
+            <div class="col-10 mt-4 col-sm-4 style btn-group alinhar-centro" style="padding-bottom: 30px;">
+            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+          </div>
+        
+
+        </form>
+            
+
+                    
+
+    </section>
+
+
+
+
 
     </main>
 
-<!-- 
-Footer -->
-<section style="padding-top: 30px;">
-  <!-- Footer -->
+<!--Footer-->
+<section class="">
   <footer class="color-bg text-black text-center text-md-start">
     <div class="container p-4">
       <div class="row">
@@ -178,13 +152,8 @@ Footer -->
   <!-- Footer -->
 </section>
 </body>
-<!--
-    Script que atualiza a variável "atual" com o container de cadastro
--->
-<script> atual=document.getElementById("cadastro"); </script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/busca.js"></script>
 <script type="text/javascript" src="./js/scripts.js"></script>
-<script type="module" src="./js/contatoComunidade.js"></script>
+<script type="module" src="./js/cadastreSeComoContato.js"></script>
 
 </html>
