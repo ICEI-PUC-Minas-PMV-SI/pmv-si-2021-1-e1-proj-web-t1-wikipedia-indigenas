@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('populacao').innerHTML          = info['populacao'];
     document.getElementById('familiaLinguistica').innerHTML = info['familiaLinguistica'];
 
+    document.getElementById('main-image').style.backgroundImage = `url('${info.imagem}')`;
+    document.getElementById('readMore').setAttribute('href', info.link);
+
   })
 
 
