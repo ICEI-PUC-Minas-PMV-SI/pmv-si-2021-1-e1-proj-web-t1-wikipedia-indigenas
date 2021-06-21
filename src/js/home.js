@@ -34,6 +34,7 @@ i18n = {
 let letras = {}
 let familiaLinguistica = {}
 let localidades = {}
+
 comunidades.forEach(a => {
   if (a.slug != undefined) {
     // fetch letras
@@ -267,8 +268,6 @@ const Indice = {
       tpl += 
         `<div class="letra">
           <h2 class="familia">${label}</h2>`;
-
-
 
       localidades[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
         tpl += 

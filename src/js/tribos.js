@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('main-image').style.backgroundImage = `url('${info.imagem}')`;
     document.getElementById('readMore').setAttribute('href', info.link);
 
+    document.querySelector('a[name="contato"]')
+      .setAttribute('href', `../../contato-com-a-comunidade.html?name=${info.slug}`);
+
   })
 
 
