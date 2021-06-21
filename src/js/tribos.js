@@ -34,19 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
     let autor = "";
     info.nomes.forEach((v,k) => {
       if(k > 0){
-        autor += ", ";
+        autor += "<br /> e ";
       } else {
         if(v.length > 0){
           autor += "Por: ";
         }
       }
       autor += v;
-      if(info.cargos[k] != ''){
-        autor += ` - ${cargos[k]}`
+      if(info.hasOwnProperty('cargos')){
+        if(info.cargos[k] != ''){
+          autor += `<br />${info.cargos[k]}`
+        }  
       }
     })
 
-    document.getElementById('autor').innerText = autor;
+    document.getElementById('autor').innerHTML = autor;
     document.getElementById('original').innerHTML = `<a href=${info.link}>ver original <i class="fas fa-external-link-alt"></i></a>`;
 
   })

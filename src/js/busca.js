@@ -1,3 +1,4 @@
+let loading = false;
 let s = [];
 let tamanho = '';
 let searchString = '';
@@ -8,8 +9,10 @@ async function loadtribes() {
 
   if (localStorage.getItem('db') === null || JSON.parse(localStorage.getItem('counter')) > 9) {
       // não armazenou tribos no Storage
+      loading = true;
       const res = await fetch('https://wiki.previa.app/api/search/?fl=name,imagem,localizacao,paragrafo,familiaLinguistica,slug,module,description&rows=999');
       const tribos = await res.json();
+      loading = false;
       s = tribos.docs;
 
       localStorage.setItem('db', JSON.stringify(s));
