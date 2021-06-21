@@ -10,6 +10,16 @@
   line-height: 2.2rem;
 }
 
+#creditos{
+  margin-bottom: 1rem;
+}
+
+#creditos > span{
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
 #readMore{
   padding: 0 1rem;
   font-size: 1.1rem;
@@ -18,7 +28,7 @@
 /* main/middle column */
 .mcol {
   padding-left: 96px;
-  max-width: 70%;
+  width: 70%;
 }
 
 /* right column */
