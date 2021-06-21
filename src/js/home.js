@@ -1,8 +1,39 @@
 let comunidades = JSON.parse(localStorage.getItem('comunidades'));
 
+i18n = {
+  "AC": "Acre",
+  "AL": "Alagoas",
+  "AP": "Amapá",
+  "AM": "Amazonas",
+  "BA": "Bahia",
+  "CE": "Ceará",
+  "DF": "Distrito Federal",
+  "ES": "Espírito Santo",
+  "GO": "Goiás",
+  "MA": "Maranhão",
+  "MT": "Mato Grosso",
+  "MS": "Mato Grosso do Sul",
+  "MG": "Minas Gerais",
+  "PA": "Pará",
+  "PB": "Paraíba",
+  "PR": "Paraná",
+  "PE": "Pernambuco",
+  "PI": "Piauí",
+  "RJ": "Rio de Janeiro",
+  "RN": "Rio Grande do Norte",
+  "RS": "Rio Grande do Sul",
+  "RO": "Rondônia",
+  "RR": "Roraima",
+  "SC": "Santa Catarina",
+  "SP": "São Paulo",
+  "SE": "Sergipe",
+  "TO": "Tocantins",
+  "GF": "Guiana Francesa"
+}
+
 let letras = {}
-let i18n = {}
 let familiaLinguistica = {}
+let localidades = {}
 comunidades.forEach(a => {
   if (a.slug != undefined) {
     // fetch letras
@@ -20,15 +51,60 @@ comunidades.forEach(a => {
       }
       familiaLinguistica[f].push(a);  
     }
-    
 
-    // fetch i18n
+    // fetch localidade
+    if(a.localizacao != ''){
+      let g = a.localizacao;
+
+      g.split(',').forEach(b => {
+        b = b.trim()
+
+        if(b.indexOf('Guiana Francesa') > 0){
+          if (!localidades.hasOwnProperty('GF')) {
+            localidades.GF = [];
+          }
+          localidades.GF.push(a);
+          b = b.replace("Guiana Francesa", "").replace("  ", " ").trim();
+        }
+
+        b.split(" ").forEach(c => {
+          // console.log(c);
+          if(!i18n.hasOwnProperty(c)){
+            // console.log(c);
+            if (!localidades.hasOwnProperty(c)) {
+              localidades[c] = [];
+            }
+            localidades[c].push(a);
+
+            b = b.replace(c, '').trim();
+          }
+        });
+
+        if(b.indexOf('/') > 0){
+          b.split('/').forEach(d => {
+            if (!localidades.hasOwnProperty(d)) {
+              localidades[d] = [];
+            }
+            localidades[d].push(a);
+          })  
+        }
+        
+
+        // console.log(b);
+
+        if(b != ""){
+          if (!localidades.hasOwnProperty(b)) {
+            localidades[b] = [];
+          }
+          localidades[b].push(a);  
+        }
+        
+      }) 
+    }
+    // update i18n
     i18n[a.slug] = a.name;
   }
 })
-
-
-console.log(familiaLinguistica);
 
 const Home = {
   init: () => {
@@ -145,7 +221,7 @@ const Indice = {
         `<div class="letra">
           <h2>${l}</h2>`;
 
-      letras[l].forEach(a => {
+      letras[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
         tpl += 
         `<nav>
           <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
@@ -167,7 +243,7 @@ const Indice = {
         `<div class="letra">
           <h2 class="familia">${l}</h2>`;
 
-      familiaLinguistica[l].forEach(a => {
+      familiaLinguistica[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
         tpl += 
         `<nav>
           <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
@@ -182,7 +258,30 @@ const Indice = {
   },
 
   localidade: () => {
-    alert("localidade")
+    let tpl = '';
+
+    Object.keys(localidades).sort().forEach(l => {
+
+      let label = (i18n.hasOwnProperty(l)) ? i18n[l] : l ;
+
+      tpl += 
+        `<div class="letra">
+          <h2 class="familia">${label}</h2>`;
+
+      
+
+      localidades[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
+        tpl += 
+        `<nav>
+          <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
+        </nav>`
+      })
+
+      tpl += `</div>`;
+
+    });
+
+    Indice.DOM.content.innerHTML = tpl;
   }
 }
 
