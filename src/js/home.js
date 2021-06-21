@@ -2,58 +2,14 @@ let comunidades = JSON.parse(localStorage.getItem('comunidades'));
 
 let letras = {}
 comunidades.forEach(a => {
-    if (a.slug != undefined) {
-        let l = a.slug.slice(0, 1).toUpperCase();
-        if (!letras.hasOwnProperty(l)) {
-            letras[l] = [];
-        }
-        letras[l].push(a);
+  if (a.slug != undefined) {
+    let l = a.slug.slice(0, 1).toUpperCase();
+    if (!letras.hasOwnProperty(l)) {
+      letras[l] = [];
     }
+    letras[l].push(a);
+  }
 })
-
-let randomCard1 = comunidades[Math.floor(Math.random() * comunidades.length)];
-let randomCard2 = comunidades[Math.floor(Math.random() * comunidades.length)];
-let randomCard3 = comunidades[Math.floor(Math.random() * comunidades.length)];
-
-while (randomCard1 == randomCard2 || randomCard2 == randomCard3 || randomCard1 == randomCard3 || randomCard1.imagem == '' || randomCard1.paragrafo == '' || randomCard2.imagem == '' || randomCard2.paragrafo == '' || randomCard3.imagem == '' || randomCard3.paragrafo == '') {
-    randomCard1 = comunidades[Math.floor(Math.random() * comunidades.length)];
-    randomCard2 = comunidades[Math.floor(Math.random() * comunidades.length)];
-    randomCard3 = comunidades[Math.floor(Math.random() * comunidades.length)];
-}
-
-const card1 =
-    `<a href=./tribos/index.html?name=${randomCard1.slug}>
-     <div class="card">
-       <img class="card-img-top" src="${randomCard1.imagem}">
-       <div class="card-body">
-           <h5 class="card-title text-center">${randomCard1.name}</h5>
-           <p class="card-text">${randomCard1.paragrafo}</p>
-       </div>
-     </div>
-     </a>`
-document.getElementById('card1').innerHTML = card1;
-
-const card2 = `<a href=./tribos/index.html?name=${randomCard2.slug}>
-<div class="card">
-  <img class="card-img-top" src="${randomCard2.imagem}">
-  <div class="card-body">
-      <h5 class="card-title text-center">${randomCard2.name}</h5>
-      <p class="card-text">${randomCard2.paragrafo}</p>
-  </div>
-</div>
-</a>`
-document.getElementById('card2').innerHTML = card2;
-
-const card3 = `<a href=./tribos/index.html?name=${randomCard3.slug}>
-<div class="card">
-<img class="card-img-top" src="${randomCard3.imagem}">
-<div class="card-body">
-    <h5 class="card-title text-center">${randomCard3.name}</h5>
-    <p class="card-text">${randomCard3.paragrafo}</p>
-</div>
-</div>
-</a>`
-document.getElementById('card3').innerHTML = card3;
 
 
 var btnNome = document.getElementById('nome');
@@ -72,74 +28,155 @@ btnLocalidade.addEventListener('click', function() {
 }, false);
 
 function clickResponse(titulo) {
-    var inicioLista = "<ul>"
-    var fimLista = "</ul>"
-    var divTela = document.getElementById('tribos');
+  var inicioLista = "<ul class='tribe'>"
+  var fimLista = "</ul>"
+  var divTela = document.getElementById('tribos');
 
-    var lista = inicioLista;
+  var lista = inicioLista;
 
-    if (titulo == "nome") {
-        lista += imprimeNomes();
-    } else if (titulo == "lingua") {
-        lista += imprimeLingua();
-    } else {
-        lista += imprimeLocalidade();
-    }
-    lista += fimLista;
-    divTela.innerHTML = lista;
+  if (titulo == "nome") {
+    lista += imprimeNomes();
+  }
+  else if (titulo == "lingua") {
+    lista += imprimeLingua();
+  }
+  else {
+    lista += imprimeLocalidade();
+  }
+  lista += fimLista;
+  divTela.innerHTML = lista;
 
 }
 
+// function imprimeNomes() {
+//   var linha = "";
+//   for (var i = 0; i < tribosNome.length; i++) {
+//     linha += "<li><h4>" + tribosNome[i].nome + "</h4></li>";
+//   } 
+//   return linha;
+// }
+
+// function imprimeLingua() {
+//   var linha = "";
+//   for (var i = 0; i < tribosLingua.length; i++) {
+//     linha += "<li><h4>" + tribosLingua[i].familiaLinguistica + "</h4></li>";
+//   }
+//   return linha;
+// }
+
+// function imprimeLocalidade() {
+//   var linha = "";
+//   for (var i = 0; i < tribosLocalidade.length; i++) {
+//     linha += "<li><h4>" + tribosLocalidade[i].localidade + "</h4></li>";
+//   }
+//   return linha;
+// }
+
+
+
 function imprimeNomes() {
-    var linha = "";
-    for (var i = 0; i < tribosNome.length; i++) {
-        linha += "<li><h4>" + tribosNome[i].nome + "</h4></li>";
-    }
-    return linha;
+  var linha = [];
+  for (var i = 0; i < tribosNome.length; i++) {
+    linha +=  "<li><h4>" + tribosNome[i] + "</h4></li>";
+  };
+  console.log(linha)
+  return linha;
+
 }
 
 function imprimeLingua() {
-    var linha = "";
-    for (var i = 0; i < tribosLingua.length; i++) {
-        linha += "<li><h4>" + tribosLingua[i].familiaLinguistica + "</h4></li>";
-    }
-    return linha;
+  var linha = "";
+  for (var i = 0; i < tribosLingua.length; i++) {
+    linha += "<li><h4>" + tribosLingua[i] + "</h4></li>";
+  }
+  return linha;
 }
 
 function imprimeLocalidade() {
-    var linha = "";
-    for (var i = 0; i < tribosLocalidade.length; i++) {
-        linha += "<li><h4>" + tribosLocalidade[i].localidade + "</h4></li>";
-    }
-    return linha;
+  var linha = "";
+  for (var i = 0; i < tribosLocalidade.length; i++) {
+    linha += "<li><h4>" + tribosLocalidade[i] + "</h4></li>";
+  }
+  return linha;
 }
 
 //Dados de tribos indígenas
 
-const tribosNome = [
-    { "nome": "Aikanã" },
-    { "nome": "Aikewara" },
-    { "nome": "Akuntsu" },
-    { "nome": "Amanayé" },
-    { "nome": "Amondawa" },
-];
+let tribosNome = [];
 
-const tribosLingua = [
-    { "familiaLinguistica": "Aikaná" },
-    { "familiaLinguistica": "Arawá" },
-    { "familiaLinguistica": "Arikén" },
-    { "familiaLinguistica": "Aruak" },
-    { "familiaLinguistica": "Bora" },
-];
+let tribosLingua = [];
 
-const tribosLocalidade = [
-    { "localidade": "Acre" },
-    { "localidade": "Alagoas" },
-    { "localidade": "Amazonas" },
-    { "localidade": "Amapá" },
-    { "localidade": "Bahia" },
-];
+let tribosLocalidade = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-    clickResponse("nome");
+  buscarPorNome();
+  buscarPorFamiliaLinguistica()
+  buscarPorLocalidade()
 });
+
+function buscarPorNome() {
+  fetch('https://wiki.previa.app/api/search/?fl=name&rows=10000')
+    .then(res => {
+      res.json()
+        .then(data => {
+          tribosNome = data.docs
+            .filter(nome => nome.name != 'undefined')
+            .map(nome => nome.name)
+            .sort();
+          result1 = tribosNome.map(([v]) => v);
+          result1 = result1.filter((x, i, a) => a.indexOf(x) == i);
+
+          
+          let tudo = [...result1, ...tribosNome];
+          let tudoEmOrdemAlfabetica = tudo.sort();
+          tribosNome = tudoEmOrdemAlfabetica;
+          console.log(tribosNome)
+          // console.log(tribosNome);
+          clickResponse("nome")
+          //return result1;
+        })
+    })
+}
+
+function buscarPorFamiliaLinguistica() {
+  fetch('https://wiki.previa.app/api/search/?fl=familiaLinguistica&rows=100000')
+    .then(res => {
+      res.json()
+        .then(data => {
+          tribosLingua = data.docs
+            .filter(lingua => lingua.familiaLinguistica)
+            .map(lingua => lingua.familiaLinguistica)
+            .sort();
+          //remove itens repetidos
+          tribosLingua = tribosLingua.filter((x, i, a) => a.indexOf(x) == i)
+          //remove as primeiras letras das strings e joga em um array
+          let result = tribosLingua.map(([v]) => v);
+          //remove itens repetidos
+          result = result.filter((x, i, a) => a.indexOf(x) == i);
+          let tudo = [...result, ...tribosLingua];
+          let tudoEmOrdemAlfabetica = tudo.sort();
+          tribosLingua = tudoEmOrdemAlfabetica;
+          //console.log(tribosLingua);
+        })
+    })
+}
+
+function buscarPorLocalidade() {
+  fetch('https://wiki.previa.app/api/search/?fl=localizacao&rows=100000')
+    .then(res => {
+      res.json()
+        .then(data => {
+          tribosLocalidade = data.docs
+            .filter(localidade => localidade.localizacao)
+            .map(localidade => localidade.localizacao)
+            .sort();
+          tribosLocalidade = tribosLocalidade.filter((x, i, a) => a.indexOf(x) == i)
+          let result = tribosLocalidade.map(([v]) => v);
+          result = result.filter((x, i, a) => a.indexOf(x) == i);
+          let tudo = [...result, ...tribosLocalidade];
+          let tudoEmOrdemAlfabetica = tudo.sort();
+          tribosLocalidade = tudoEmOrdemAlfabetica;
+          //console.log(tribosLocalidade);
+        })
+    })
+}
