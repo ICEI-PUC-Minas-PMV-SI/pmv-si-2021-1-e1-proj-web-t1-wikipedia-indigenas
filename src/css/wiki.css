@@ -1,11 +1,12 @@
-    .home {
-        color: #222222;
-        font-family: "Poppins", sans-serif;
-        font-size: 14px !important;
-        font-weight: 300 !important;
-        line-height: 1.625em;
+   .home{
+    color: #222222;
+    font-family: "Poppins";
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    line-height: 1.625em;
     }
-    
+
+
     body>header>nav.navbar>h1 {
         padding: 0.2rem 1rem;
         font-size: 2rem;
@@ -170,9 +171,11 @@
             display: block;
             min-height: 5rem;
         }
+<<<<<<< Updated upstream
         .btn-group {
-            padding-left: 37%;
+            align-items: center;
         }
+<<<<<<< Updated upstream
     }
     /*########################################################*/
     /*############### HEADER + Footer Background #############*/
@@ -226,3 +229,81 @@
         display: block;
         padding: 20px 0px;
     }
+=======
+        #tribos {
+            
+            font-size: 0% ;
+            
+        }
+    
+
+
+/*########################################################*/
+/*############### HEADER + Footer Background #############*/
+/*########################################################*/
+
+.color-bg{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.titulo-footer{
+text-transform: uppercase !important;
+text-decoration: none;
+}
+
+
+.footer li a{
+    color: #777777;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+.footer li{
+    margin-bottom: 10px;
+
+}
+
+i {
+      font-style: normal;
+}
+
+.fab{
+    color: black;
+}
+
+/*########################################################*/
+/*#################### OCORRÊNCIAS #######################*/
+/*########################################################*/
+
+
+.for_box_bg {
+     /*background: #052501;*/
+      padding: 50px 0px;
+ }
+.for_box_bg .for_box {
+     text-align: center; 
+     box-sizing: border-box;
+}
+.for_box_bg .for_box span {
+     font-weight: bold; 
+     font-size:51px; 
+     /*line-height: 51px;*/ 
+     display: block;
+     padding: 20px 0px;
+}
+    
+    .btn-group {
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    .tribe {
+    
+        column-count: 4;
+        list-style-type: none;   
+        display: flexbox;
+    }
+       
+

@@ -268,7 +268,7 @@ const Indice = {
         `<div class="letra">
           <h2 class="familia">${label}</h2>`;
 
-      
+
 
       localidades[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
         tpl += 
@@ -284,14 +284,6 @@ const Indice = {
     Indice.DOM.content.innerHTML = tpl;
   }
 }
-
-
-
-
-
-
-
-
 
 
 
