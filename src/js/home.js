@@ -18,30 +18,6 @@ const Home = {
   init: () => {
     Home.cards();
     Home.ocorrencias();
-    Home.encontre();
-  },
-
-  encontre: () => {
-    let tpl = '';
-
-    Object.keys(letras).sort().forEach(l => {
-      tpl += 
-        `<div class="letra">
-          <h2>${l}</h2>`;
-
-      letras[l].forEach(a => {
-        tpl += 
-        `<nav>
-          <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
-        </nav>`
-      })
-
-      tpl += `</div>`;
-
-    });
-
-    document.getElementById('tribos').innerHTML = tpl;
-
   },
 
   ocorrencias: () => {
@@ -124,6 +100,57 @@ const Home = {
 }
 
 
+const Indice = {
+
+  DOM: {
+    content: document.getElementById('tribos'),
+    buttons: document.querySelectorAll('#encontre .btn-group > button')
+  },
+
+  init: () => {
+    Indice.nome();
+    Indice.listen();
+  },
+
+  listen: () => {
+    Indice.DOM.buttons.forEach(a => {
+      a.addEventListener('click', function(e) {
+        let method = this.getAttribute('id');
+        Indice[method]();
+      }, false);
+    })
+  },
+
+  nome: () => {
+    let tpl = '';
+
+    Object.keys(letras).sort().forEach(l => {
+      tpl += 
+        `<div class="letra">
+          <h2>${l}</h2>`;
+
+      letras[l].forEach(a => {
+        tpl += 
+        `<nav>
+          <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
+        </nav>`
+      })
+
+      tpl += `</div>`;
+
+    });
+
+    Indice.DOM.content.innerHTML = tpl;
+  },
+
+  familiaLinguistica: () => {
+    alert("familia");
+  },
+
+  localidade: () => {
+    alert("localidade")
+  }
+}
 
 
 
@@ -221,5 +248,6 @@ const Home = {
 
 document.addEventListener('DOMContentLoaded', () => {
   Home.init();
+  Indice.init();
 //     clickResponse("nome");
 });
