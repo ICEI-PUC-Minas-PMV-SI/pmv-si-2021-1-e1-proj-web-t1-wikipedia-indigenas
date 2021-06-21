@@ -51,6 +51,59 @@
         background-color: transparent;
         padding-right: 0;
     }
+
+    #encontre #tribos{
+      display: block;
+      margin-top: 2rem;
+      columns: 5;
+    }
+
+    @media (max-width: 900px) {
+      #encontre #tribos{
+        columns: 4
+      }
+    }
+
+    @media (max-width: 700px) {
+      #encontre #tribos{
+        columns: 3
+      }
+    }
+
+    @media (max-width: 500px) {
+      #encontre #tribos{
+        columns: 2
+      }
+    }
+
+    @media (max-width: 300px) {
+      #encontre #tribos{
+        columns: 1
+      }
+    }
+
+    #encontre #tribos > .letra h2 {
+      margin-top: 2rem;
+    }
+
+    #encontre #tribos > .letra h2.familia {
+      font-size: 1.2rem;
+    }
+
+    #encontre #tribos .letra:first-child h2{
+      margin-top: 0;
+    }
+    
+    #encontre #tribos > .letra { 
+      max-width: 200px;
+    }
+
+    #encontre #tribos > .letra nav a{
+      padding-left: 1rem;
+      text-decoration: none;
+      color: #000;
+    }
+
     
     main>section {
         padding-top: 2rem;
