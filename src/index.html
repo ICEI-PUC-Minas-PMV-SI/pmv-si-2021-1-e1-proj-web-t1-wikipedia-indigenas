@@ -53,14 +53,17 @@
     <main id="busca">
 
         <!-- Encontre uma comunidade-->
-        <section>
+        <section id="encontre">
             <h2 class="titulo">Encontre uma comunidade</h2>
-            <div class="btn-group" role="group" aria-label="Basic example">
+            <div class="container">
+              <div class="btn-group" role="group" aria-label="Basic example">
                 <button id="nome" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por nome</button>
                 <button id="lingua" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por família linguística</button>
                 <button id="localidade" type="button" class="btn btn-light btn-outline-dark" data-toggle="button" aria-pressed="true">por localidade</button>
+              </div>
+              
+              <div id="tribos"></div>
             </div>
-            <div id="tribos"></div>
         </section>
 
         <!-- comunidades em destaque-->
