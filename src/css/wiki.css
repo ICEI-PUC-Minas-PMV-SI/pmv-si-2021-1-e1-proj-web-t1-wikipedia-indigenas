@@ -85,6 +85,10 @@
       margin-top: 2rem;
     }
 
+    #encontre #tribos > .letra h2.familia {
+      font-size: 1.2rem;
+    }
+
     #encontre #tribos .letra:first-child h2{
       margin-top: 0;
     }

@@ -2,17 +2,33 @@ let comunidades = JSON.parse(localStorage.getItem('comunidades'));
 
 let letras = {}
 let i18n = {}
+let familiaLinguistica = {}
 comunidades.forEach(a => {
   if (a.slug != undefined) {
-      let l = a.slug.slice(0, 1).toUpperCase();
-      if (!letras.hasOwnProperty(l)) {
-          letras[l] = [];
+    // fetch letras
+    let l = a.slug.slice(0, 1).toUpperCase();
+    if (!letras.hasOwnProperty(l)) {
+        letras[l] = [];
+    }
+    letras[l].push(a);
+
+    // fetch familiaLinguistica
+    if(a.familiaLinguistica != ''){
+      let f = a.familiaLinguistica;
+      if (!familiaLinguistica.hasOwnProperty(f)) {
+          familiaLinguistica[f] = [];
       }
-      letras[l].push(a);
-      i18n[a.slug] = a.name;
+      familiaLinguistica[f].push(a);  
+    }
+    
+
+    // fetch i18n
+    i18n[a.slug] = a.name;
   }
 })
 
+
+console.log(familiaLinguistica);
 
 const Home = {
   init: () => {
@@ -144,7 +160,25 @@ const Indice = {
   },
 
   familiaLinguistica: () => {
-    alert("familia");
+    let tpl = '';
+
+    Object.keys(familiaLinguistica).sort().forEach(l => {
+      tpl += 
+        `<div class="letra">
+          <h2 class="familia">${l}</h2>`;
+
+      familiaLinguistica[l].forEach(a => {
+        tpl += 
+        `<nav>
+          <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
+        </nav>`
+      })
+
+      tpl += `</div>`;
+
+    });
+
+    Indice.DOM.content.innerHTML = tpl;
   },
 
   localidade: () => {
