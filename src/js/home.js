@@ -1,15 +1,53 @@
 let comunidades = JSON.parse(localStorage.getItem('comunidades'));
 
 let letras = {}
+let i18n = {}
 comunidades.forEach(a => {
-    if (a.slug != undefined) {
-        let l = a.slug.slice(0, 1).toUpperCase();
-        if (!letras.hasOwnProperty(l)) {
-            letras[l] = [];
-        }
-        letras[l].push(a);
-    }
+  if (a.slug != undefined) {
+      let l = a.slug.slice(0, 1).toUpperCase();
+      if (!letras.hasOwnProperty(l)) {
+          letras[l] = [];
+      }
+      letras[l].push(a);
+      i18n[a.slug] = a.name;
+  }
 })
+
+fetch('https://wiki.previa.app/api/search/?fq=module:ocorrencias&sort=sortDate DESC&rows=3')
+  .then(r => r.json())
+  .then(r => {
+    document.getElementById('ocorrenciasNumFound').innerText = r.numFound;
+
+    let tpl = '<table>';
+
+    r.docs.forEach(a => {
+      if(a.name != '' && a.name != 'undefined'){
+
+        let description = a.description;
+        if(description.length > 50){
+          description = description.slice(0, 50) + '...';
+        }
+
+        tpl += 
+          `<tr>
+            <td style="padding-right:1rem">${i18n[a.name]}</td>
+            <td>${description}</td>
+          </tr>` 
+      }
+    })
+    tpl += `</table>`
+
+    document.getElementById('ocorrenciasLast').innerHTML = tpl;
+
+    console.log(r);
+  });
+
+
+
+
+
+
+
 
 let randomCard1 = comunidades[Math.floor(Math.random() * comunidades.length)];
 let randomCard2 = comunidades[Math.floor(Math.random() * comunidades.length)];
