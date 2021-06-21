@@ -28,6 +28,27 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('main-image').style.backgroundImage = `url('${info.imagem}')`;
     document.getElementById('readMore').setAttribute('href', info.link);
 
+    document.querySelector('a[name="contato"]')
+      .setAttribute('href', `../../contato-com-a-comunidade.html?name=${info.slug}`);
+
+    let autor = "";
+    info.nomes.forEach((v,k) => {
+      if(k > 0){
+        autor += ", ";
+      } else {
+        if(v.length > 0){
+          autor += "Por: ";
+        }
+      }
+      autor += v;
+      if(info.cargos[k] != ''){
+        autor += ` - ${cargos[k]}`
+      }
+    })
+
+    document.getElementById('autor').innerText = autor;
+    document.getElementById('original').innerHTML = `<a href=${info.link}>ver original <i class="fas fa-external-link-alt"></i></a>`;
+
   })
 
 

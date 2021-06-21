@@ -48,7 +48,7 @@
     <main>
         
       <section> 
-        <h2 class="titulo">Maxakali</h2>
+        <h2 class="titulo" id="nome-da-tribo"></h2>
            <!--
                 Abaixo são definidos os containeres das interfaces de cadastro.
                 Apenas uma é apresentada ao usuário em um determinado momento em função da navegação no menu.
@@ -83,7 +83,8 @@
             </div>
  -->
 
-            <form class="alinhar-centro">
+            <form class="alinhar-centro" id="contatoComunidade">
+              <input type="hidden" name="name" id="name"  />
   <div class="form-group">
     <label for="nome">Nome </label>
     <input type="text" class="form-control" id="nome" name="nome"  placeholder="">
@@ -182,6 +183,7 @@ Footer -->
 -->
 <script> atual=document.getElementById("cadastro"); </script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/scripts.js"></script>
+<script type="text/javascript" src="./js/busca.js"></script>
+<script type="module" src="./js/contatoComunidade.js"></script>
 
 </html>

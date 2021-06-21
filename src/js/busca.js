@@ -6,23 +6,23 @@ const searchBar = document.getElementById('search-bar');
 
 async function loadtribes() {
 
-    if (localStorage.getItem('db') === null || JSON.parse(localStorage.getItem('counter')) > 9) {
-        // não armazenou tribos no Storage
-        const res = await fetch('https://wiki.previa.app/api/search/?fl=name,imagem,localizacao,paragrafo,familiaLinguistica,slug,module,description&rows=999');
-        const tribos = await res.json();
-        s = tribos.docs;
+  if (localStorage.getItem('db') === null || JSON.parse(localStorage.getItem('counter')) > 9) {
+      // não armazenou tribos no Storage
+      const res = await fetch('https://wiki.previa.app/api/search/?fl=name,imagem,localizacao,paragrafo,familiaLinguistica,slug,module,description&rows=999');
+      const tribos = await res.json();
+      s = tribos.docs;
 
-        localStorage.setItem('db', JSON.stringify(s));
-        localStorage.setItem('comunidades', JSON.stringify(s.filter(a => {
-            return (a.module == "comunidade")
-        })));
-        localStorage.setItem('counter', 0);
+      localStorage.setItem('db', JSON.stringify(s));
+      localStorage.setItem('comunidades', JSON.stringify(s.filter(a => {
+          return (a.module == "comunidade")
+      })));
+      localStorage.setItem('counter', 0);
 
-    } else {
-        s = JSON.parse(localStorage.getItem('db'));
-        let counter = JSON.parse(localStorage.getItem('counter'));
-        localStorage.setItem('counter', counter + 1);
-    }
+  } else {
+      s = JSON.parse(localStorage.getItem('db'));
+      let counter = JSON.parse(localStorage.getItem('counter'));
+      localStorage.setItem('counter', counter + 1);
+  }
 
 }
 loadtribes();
