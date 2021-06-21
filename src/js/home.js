@@ -1,111 +1,115 @@
-let comunidades = JSON.parse(localStorage.getItem('comunidades'));
+let init = () => {
+  window.comunidades = JSON.parse(localStorage.getItem('comunidades'));
 
-i18n = {
-  "AC": "Acre",
-  "AL": "Alagoas",
-  "AP": "Amapá",
-  "AM": "Amazonas",
-  "BA": "Bahia",
-  "CE": "Ceará",
-  "DF": "Distrito Federal",
-  "ES": "Espírito Santo",
-  "GO": "Goiás",
-  "MA": "Maranhão",
-  "MT": "Mato Grosso",
-  "MS": "Mato Grosso do Sul",
-  "MG": "Minas Gerais",
-  "PA": "Pará",
-  "PB": "Paraíba",
-  "PR": "Paraná",
-  "PE": "Pernambuco",
-  "PI": "Piauí",
-  "RJ": "Rio de Janeiro",
-  "RN": "Rio Grande do Norte",
-  "RS": "Rio Grande do Sul",
-  "RO": "Rondônia",
-  "RR": "Roraima",
-  "SC": "Santa Catarina",
-  "SP": "São Paulo",
-  "SE": "Sergipe",
-  "TO": "Tocantins",
-  "GF": "Guiana Francesa"
+  i18n = {
+    "AC": "Acre",
+    "AL": "Alagoas",
+    "AP": "Amapá",
+    "AM": "Amazonas",
+    "BA": "Bahia",
+    "CE": "Ceará",
+    "DF": "Distrito Federal",
+    "ES": "Espírito Santo",
+    "GO": "Goiás",
+    "MA": "Maranhão",
+    "MT": "Mato Grosso",
+    "MS": "Mato Grosso do Sul",
+    "MG": "Minas Gerais",
+    "PA": "Pará",
+    "PB": "Paraíba",
+    "PR": "Paraná",
+    "PE": "Pernambuco",
+    "PI": "Piauí",
+    "RJ": "Rio de Janeiro",
+    "RN": "Rio Grande do Norte",
+    "RS": "Rio Grande do Sul",
+    "RO": "Rondônia",
+    "RR": "Roraima",
+    "SC": "Santa Catarina",
+    "SP": "São Paulo",
+    "SE": "Sergipe",
+    "TO": "Tocantins",
+    "GF": "Guiana Francesa"
+  }
+
+  window.letras = {}
+  window.familiaLinguistica = {}
+  window.localidades = {}
+
+  comunidades.forEach(a => {
+    if (a.slug != undefined) {
+      // fetch letras
+      let l = a.slug.slice(0, 1).toUpperCase();
+      if (!letras.hasOwnProperty(l)) {
+          letras[l] = [];
+      }
+      letras[l].push(a);
+
+      // fetch familiaLinguistica
+      if(a.familiaLinguistica != ''){
+        let f = a.familiaLinguistica;
+        if (!familiaLinguistica.hasOwnProperty(f)) {
+            familiaLinguistica[f] = [];
+        }
+        familiaLinguistica[f].push(a);  
+      }
+
+      // fetch localidade
+      if(a.localizacao != ''){
+        let g = a.localizacao;
+
+        g.split(',').forEach(b => {
+          b = b.trim()
+
+          if(b.indexOf('Guiana Francesa') > 0){
+            if (!localidades.hasOwnProperty('GF')) {
+              localidades.GF = [];
+            }
+            localidades.GF.push(a);
+            b = b.replace("Guiana Francesa", "").replace("  ", " ").trim();
+          }
+
+          b.split(" ").forEach(c => {
+            // console.log(c);
+            if(!i18n.hasOwnProperty(c)){
+              // console.log(c);
+              if (!localidades.hasOwnProperty(c)) {
+                localidades[c] = [];
+              }
+              localidades[c].push(a);
+
+              b = b.replace(c, '').trim();
+            }
+          });
+
+          if(b.indexOf('/') > 0){
+            b.split('/').forEach(d => {
+              if (!localidades.hasOwnProperty(d)) {
+                localidades[d] = [];
+              }
+              localidades[d].push(a);
+            })  
+          }
+          
+
+          // console.log(b);
+
+          if(b != ""){
+            if (!localidades.hasOwnProperty(b)) {
+              localidades[b] = [];
+            }
+            localidades[b].push(a);  
+          }
+          
+        }) 
+      }
+      // update i18n
+      i18n[a.slug] = a.name;
+    }
+  })
 }
 
-let letras = {}
-let familiaLinguistica = {}
-let localidades = {}
 
-comunidades.forEach(a => {
-  if (a.slug != undefined) {
-    // fetch letras
-    let l = a.slug.slice(0, 1).toUpperCase();
-    if (!letras.hasOwnProperty(l)) {
-        letras[l] = [];
-    }
-    letras[l].push(a);
-
-    // fetch familiaLinguistica
-    if(a.familiaLinguistica != ''){
-      let f = a.familiaLinguistica;
-      if (!familiaLinguistica.hasOwnProperty(f)) {
-          familiaLinguistica[f] = [];
-      }
-      familiaLinguistica[f].push(a);  
-    }
-
-    // fetch localidade
-    if(a.localizacao != ''){
-      let g = a.localizacao;
-
-      g.split(',').forEach(b => {
-        b = b.trim()
-
-        if(b.indexOf('Guiana Francesa') > 0){
-          if (!localidades.hasOwnProperty('GF')) {
-            localidades.GF = [];
-          }
-          localidades.GF.push(a);
-          b = b.replace("Guiana Francesa", "").replace("  ", " ").trim();
-        }
-
-        b.split(" ").forEach(c => {
-          // console.log(c);
-          if(!i18n.hasOwnProperty(c)){
-            // console.log(c);
-            if (!localidades.hasOwnProperty(c)) {
-              localidades[c] = [];
-            }
-            localidades[c].push(a);
-
-            b = b.replace(c, '').trim();
-          }
-        });
-
-        if(b.indexOf('/') > 0){
-          b.split('/').forEach(d => {
-            if (!localidades.hasOwnProperty(d)) {
-              localidades[d] = [];
-            }
-            localidades[d].push(a);
-          })  
-        }
-        
-
-        // console.log(b);
-
-        if(b != ""){
-          if (!localidades.hasOwnProperty(b)) {
-            localidades[b] = [];
-          }
-          localidades[b].push(a);  
-        }
-        
-      }) 
-    }
-    // update i18n
-    i18n[a.slug] = a.name;
-  }
-})
 
 const Home = {
   init: () => {
@@ -284,7 +288,16 @@ const Indice = {
   }
 }
 
+let interval = setInterval(() => {
+  if(!loading){
+    init();
+    Home.init();
+    Indice.init();
+
+    clearInterval(interval);
+  }
+}, 200)
+
 document.addEventListener('DOMContentLoaded', () => {
-  Home.init();
-  Indice.init();
+  
 });
