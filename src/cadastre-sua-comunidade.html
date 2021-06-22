@@ -12,101 +12,43 @@
 </head>
 
 <body class="forms cadastre home">
-     <header>
-        <nav class="navbar  navbar-light navbar-expand-sm color-bg">
+     <header class="header-tamanho-letra">
+        <nav class="navbar  navbar-light navbar-expand-sm color-bg fixed-top cor-nav">
             <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Wikipédia Indígena</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><img src="https://i.imgur.com/Q0JUsgu.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li>
-        <li class="nav-item"><a class="nav-link" href="contato-com-a-comunidade.html">Contato com a comunidade</a></li>
-        <li class="nav-item"><a class="nav-link" href="registrar-ocorrencia.html">Registre sua ocorrência</a></li>
-      </ul>
-              <div class="searchBar">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button id="search">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato-com-a-comunidade.html">Contato com a comunidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registrar-ocorrencia.html">Registre sua ocorrência</a></li>
+                    </ul>
+                    <div class="searchBar">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button id="search">
                             <span class="input-group-text border-0" id="search-addon">
-                                <a href="busca.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg></a>
+                                </svg>
                             </span>
                         </button>
+                            </div>
+                            <input id="search-bar" type="text" class="form-control" autocomplete="off" placeholder="Encontre sua comunidade">
+                        </div>
                     </div>
-                    <input type="search" class="form-control" placeholder="Encontre sua comunidade">
                 </div>
             </div>
-      </div>
-  </div>
-</nav>
+        </nav>
         <div id="main-image"></div>
     </header>
     <main>
         
       <section>
         <h2 class="titulo">Cadastre sua comunidade</h2>
-
-        <!-- <div class="container">
-          <form id="cadastreComunidade">
-            <h4>Dados da comunidade</h4>
-            
-            <label for="name">Nome da comunidade</label>
-            <input type="text" name="name" />
-            <label for="autodenominacao">Autodenominação</label>
-            <input type="text" name="autodenominacao" />
-            <label for="localizacao">Família Linguística</label>
-            <input type="text" name="familiaLinguistica" />
-            <label for="localizacao">Principal estado de localização do território</label>
-            <select name="localizacao">
-              <option value="Selecione"></option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-            </select>
-
-            <label for="populacao">Tamanho da população</label>
-            <input type="text" name="populacao" />
-            <label for="paragrafo">Texto</label>
-            <textarea name="paragrafo"></textarea>
-
-            <h4>Seus dados</h4>
-            <label for="autor">Seu nome</label>
-            <input type="text" name="autor" />
-            <label for="name">Seu e-mail</label>
-            <input type="email" name="email" />
-
-            <button type="submit">Cadastrar</button>
-          </form>
-        </div> -->
-
                   <form class="alinhar-centro" id="cadastreComunidade">
             <div class="form-group">
               <label for="nome">Nome da comunidade </label>
@@ -207,53 +149,17 @@
 
 
 
-<!--Footer-->
-<section class="">
-    <footer class="color-bg text-black text-center text-md-start">
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="titulo-footer">Sobre nós</h5>
-
-          <p>
-               Conteúdo
-                            
-          </p>
-        </div>
-        <!--Footer-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="titulo-footer ">Links</h5>
-          <ul class="list-unstyled footer">
-              <li><a href="cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li> 
-              <li><a href="contato-com-a-comunidade.html">Contato com a comunidade</a></li>
-              <li><a href="reistrar-ocorrencia.html">Registre sua ocorrência</a></li>
-          </ul>
-        </div>
+              <!-- Footer -->
+            <footer class="text-center text-white"style="background-color: #ccc">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+             <a class="text-white underline-text" href="index.html">Wikipédia Indígena</a>
+            </div>
+            </footer>
+            <!-- Footer -->
 
 
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="titulo-footer ">Sociais</h5>
-          <ul class="list-unstyled footer">
-            <a href="#!" ><i class="fab fa-facebook-square fa-3x"></i></i></a>
-            <a href="#!" ><i class="fab fa-instagram fa-3x"></i></i></a>
-            <a href="#!" ><i class="fab fa-twitter-square fa-3x"></i></i></i></a>
-            
 
-
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2021 Copyright:
-      <a class="text-white " style="text-decoration: none;">Wikipédia Indígena</a>
-    </div>
-  </footer>
-  <!-- Footer -->
-</section>
 </body>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/scripts.js"></script>  

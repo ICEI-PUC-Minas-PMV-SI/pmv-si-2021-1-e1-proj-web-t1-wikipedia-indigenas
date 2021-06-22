@@ -181,33 +181,42 @@
     /*############### HEADER + Footer Background #############*/
     /*########################################################*/
     
-    .color-bg {
-        background-color: rgba(0, 0, 0, 0.05);
+    .color-bg{
+    background-color: rgba(0, 0, 0, 0.05);
     }
+
+
+    .footer li a{
+    color: #777777;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
     
-    .titulo-footer {
-        text-transform: uppercase !important;
-        text-decoration: none;
     }
-    
-    .footer li a {
-        color: #777777;
-        font-weight: 400;
-        font-size: 16px;
-        text-decoration: none;
+
+    .footer li{
+    margin-bottom: 10px;
+
+    }   
+
+    i   {
+      font-style: normal;
     }
-    
-    .footer li {
-        margin-bottom: 10px;
+
+    .fab{
+    color: black;
     }
-    
-    i {
-        font-style: normal;
+
+    .header-tamanho-letra{
+    font-size: 16px !important;
     }
-    
-    .fab {
-        color: black;
+
+    .cor-nav{
+    background: rgb(255 255 255 / 100%) !important;
     }
+
+
+
     /*########################################################*/
     /*#################### OCORRÊNCIAS #######################*/
     /*########################################################*/
@@ -272,6 +281,11 @@ i {
 
 .fab{
     color: black;
+}
+
+
+.underline-text{
+    text-decoration: none !important;
 }
 
 /*########################################################*/
