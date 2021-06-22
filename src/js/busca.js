@@ -3,6 +3,8 @@ let s = [];
 let tamanho = '';
 let searchString = '';
 const searchBar = document.getElementById('search-bar');
+const seila = document.querySelectorAll('#test .btn-group > button');
+console.log(seila)
 
 
 async function loadtribes() {
