@@ -3,9 +3,6 @@ let s = [];
 let tamanho = '';
 let searchString = '';
 const searchBar = document.getElementById('search-bar');
-const seila = document.querySelectorAll('#test .btn-group > button');
-console.log(seila)
-
 
 async function loadtribes() {
 
@@ -46,7 +43,7 @@ searchBar.addEventListener('keyup', (e) => {
 
     if (searchString != '' && tamanho != 0) {
         let test = `
-            <div id="resultadosencontrados"> </div>
+            <div id="resultadosencontrados"></div>
             <div id="resultadobusca" class="container distanciamento"></div>`;
         var resul =
             `<h1>${e.target.value}</h1>
@@ -77,22 +74,16 @@ searchBar.addEventListener('keyup', (e) => {
         document.getElementById('resultadobusca').innerHTML = tpl;
     } else if (searchString == '') {
         let test = `<h1>Nada foi encontrado</h1>
-            <div id="resultadosencontrados">
-            </div>
-    
-            <div id="resultadobusca" class="container distanciamento">
-            </div>`
+            <div id="resultadosencontrados"></div>   
+            <div id="resultadobusca" class="container distanciamento"></div>`
         document.getElementById('test').style.display = 'none';
         document.getElementById('test').innerHTML = test;
         document.getElementById('busca').style.display = 'block';
         document.getElementById('main-image').style.display = 'block';
     } else if (tamanho == 0) {
         let test = `<h1>Nada foi encontrado</h1>
-            <div id="resultadosencontrados">
-        </div>
-
-        <div id="resultadobusca" class="container distanciamento">
-        </div>`
+            <div id="resultadosencontrados"></div>
+            <div id="resultadobusca" class="container distanciamento"></div>`
         document.getElementById('test').innerHTML = test;
     }
 });
