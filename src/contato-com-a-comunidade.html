@@ -12,7 +12,7 @@
 </head>
 
 <body class="forms cadastre home">
-   <header class="header-tamanho-letra">
+    <header class="header-tamanho-letra">
         <nav class="navbar  navbar-light navbar-expand-sm color-bg fixed-top cor-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="imagem/wiki-imagem.png"></a>
@@ -37,7 +37,7 @@
                             </span>
                         </button>
                             </div>
-                            <input id="search-bar" type="text" class="form-control" autocomplete="off" placeholder="Encontre sua comunidade">
+                            <input id="search-bar" type="text" class="form-control" autocomplete="off" placeholder="Busque sua comunidade">
                         </div>
                     </div>
                 </div>
@@ -45,76 +45,72 @@
         </nav>
         <div id="main-image"></div>
     </header>
-    <main>
-        
-      <section> 
-        <h2 class="titulo" id="nome-da-tribo"></h2>
-            <form class="alinhar-centro" id="contatoComunidade">
-              <input type="hidden" name="name" id="name"  />
-  
-  <div class="form-group">
-    <label for="nome">Nome </label>
-    <input type="text" class="form-control" id="nome" name="nome"  placeholder="">
-  </div>
-
-    <div class="form-group espaco">
-    <label for="email">Endereço de email </label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="">
-  </div>
-  
-  <div class="form-group espaco">
-    <label for="msg">Escreva sua mensagem </label>
-    <textarea class="form-control" id="msg" name="msg" id="msg" rows="3"></textarea>
-  </div>
-    <div class="row"> 
-     <div class="col-12 mt-3 col-sm-3 style btn-group">
-    <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
+    <div id="test" class="margem">
+        <div id="resultadosencontrados"></div>
+        <div id="resultadobusca" class="container distanciamento"></div>
     </div>
-</form>
+    <main id="busca">
+
+        <section>
+            <h2 class="titulo" id="nome-da-tribo"></h2>
+            <form class="alinhar-centro" id="contatoComunidade">
+                <input type="hidden" name="name" id="name" />
+
+                <div class="form-group">
+                    <label for="nome">Nome </label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="">
+                </div>
+
+                <div class="form-group espaco">
+                    <label for="email">Endereço de email </label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="">
+                </div>
+
+                <div class="form-group espaco">
+                    <label for="msg">Escreva sua mensagem </label>
+                    <textarea class="form-control" id="msg" name="msg" id="msg" rows="3"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3 col-sm-3 style btn-group">
+                        <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
+                    </div>
+            </form>
         </section>
 
-        <!--
-            Modal apresentada no momento que dados são enviados
-        -->
         <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Seus dados foram enviados!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  Seus dados foram enviados!
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
-                </div>
-              </div>
             </div>
         </div>
 
-    
-            
-
-
-            <section style="padding-top: 100px">
-                  <!-- Footer -->          
-            <footer class="text-center text-white"style="background-color: #ccc">
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
-             <a class="text-white underline-text" href="index.html">Wikipédia Indígena</a>
-            </div>
+        <section style="padding-top: 100px">
+            <!-- Footer -->
+            <footer class="text-center text-white" style="background-color: #ccc">
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2021 Copyright:
+                    <a class="text-white underline-text" href="index.html">Wikipédia Indígena</a>
+                </div>
             </footer>
             <!-- Footer -->
-            </section>
-
+        </section>
 
     </main>
 </body>
-<!--
-    Script que atualiza a variável "atual" com o container de cadastro
--->
-<script> atual=document.getElementById("cadastro"); </script>
+
+<script>
+    atual = document.getElementById("cadastro");
+</script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/busca.js"></script>
 <script type="text/javascript" src="./js/scripts.js"></script>

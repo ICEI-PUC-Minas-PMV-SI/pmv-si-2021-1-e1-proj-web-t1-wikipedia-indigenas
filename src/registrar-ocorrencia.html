@@ -38,7 +38,7 @@
                             </span>
                         </button>
                             </div>
-                            <input id="search-bar" type="text" class="form-control" autocomplete="off" placeholder="Encontre sua comunidade">
+                            <input id="search-bar" type="text" class="form-control" autocomplete="off" placeholder="Busque sua comunidade">
                         </div>
                     </div>
                 </div>
@@ -46,73 +46,73 @@
         </nav>
         <div id="main-image"></div>
     </header>
-    <main>
+    <div id="test" class="margem">
+        <div id="resultadosencontrados"></div>
+        <div id="resultadobusca" class="container distanciamento"></div>
+    </div>
+    <main id="busca">
 
-      <section>
-        
-        <h2 class="titulo">Registrar ocorrência</h2>
-        <div class="container">
-          <form id="registrarOcorrencia" class="alinhar-centro">
-            <h4>Dados da comunidade</h4>
-              <label for="name">Selecione a comunidade </label>
-              <select name="name"  class="form-control form-control-sm">
+        <section>
+
+            <h2 class="titulo">Registrar ocorrência</h2>
+            <div class="container">
+                <form id="registrarOcorrencia" class="alinhar-centro">
+                    <h4>Dados da comunidade</h4>
+                    <label for="name">Selecione a comunidade </label>
+                    <select name="name" class="form-control form-control-sm">
               <option value="">Selecione</option>
 
           </select>
 
-          <form id="registrarOcorrencia" class="alinhar-centro">
-            <div class=" espaco">
-              <label for="ocorrencia">Tipo de ocorrência </label>
-              <select name="ocorrencia"   class="form-control form-control-sm">
+                    <form id="registrarOcorrencia" class="alinhar-centro">
+                        <div class=" espaco">
+                            <label for="ocorrencia">Tipo de ocorrência </label>
+                            <select name="ocorrencia" class="form-control form-control-sm">
               <option value="">Selecione</option>
               <option value="ameaca">Ameaça</option>
               <option value="invasao">Invasão</option>
               <option value="atividadeClandestina">Atividade clandestina</option>
           </select>
-          </div>
+                        </div>
 
-            <h4 class="alinhar-centro">Seus dados</h4>
-          <div class="form-group alinhar-centro">
-              <label for="autor">Nome </label>
-              <input type="text" class="form-control" id="autor" name="autor"  placeholder="">
-            </div>
-          
-          <div class="form-group espaco alinhar-centro">
-              <label for="name">E-mail </label>
-              <input type="email" class="form-control" id="email" name="email"  placeholder="">
-            </div>
+                        <h4 class="alinhar-centro">Seus dados</h4>
+                        <div class="form-group alinhar-centro">
+                            <label for="autor">Nome </label>
+                            <input type="text" class="form-control" id="autor" name="autor" placeholder="">
+                        </div>
 
-          <div class="form-group espaco alinhar-centro">
-            <label for="description">Descreva a ocorrência </label>
-            <textarea class="form-control" id="description" name="description" id="description" rows="3"></textarea>
-          </div>
+                        <div class="form-group espaco alinhar-centro">
+                            <label for="name">E-mail </label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="">
+                        </div>
 
-          <div class="row"> 
-            <div class="col-10 mt-4 col-sm-4 style btn-group alinhar-centro" style="padding-bottom: 30px;">
-            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-          </div>
-        
+                        <div class="form-group espaco alinhar-centro">
+                            <label for="description">Descreva a ocorrência </label>
+                            <textarea class="form-control" id="description" name="description" id="description" rows="3"></textarea>
+                        </div>
 
-        </form>
-            
+                        <div class="row">
+                            <div class="col-10 mt-4 col-sm-4 style btn-group alinhar-centro" style="padding-bottom: 30px;">
+                                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                            </div>
 
-                    
 
-    </section>
-    </main>
+        </section>
 
-              <!-- Footer -->
-            <footer class="text-center text-white"style="background-color: #ccc">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #ccc">
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
-             <a class="text-white underline-text" href="index.html">Wikipédia Indígena</a>
+                © 2021 Copyright:
+                <a class="text-white underline-text" href="index.html">Wikipédia Indígena</a>
             </div>
-            </footer>
-            <!-- Footer -->
+        </footer>
+        <!-- Footer -->
 
+    </main>
 </body>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/scripts.js"></script>
+<script type="text/javascript" src="./js/busca.js"></script>
 <script type="module" src="./js/registrarOcorrencia.js"></script>
 
 </html>
