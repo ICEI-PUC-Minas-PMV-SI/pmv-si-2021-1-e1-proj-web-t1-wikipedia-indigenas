@@ -1,11 +1,6 @@
 
 
-// TODO: json para mapear sigla de estado para seu nome completo
-/*const stateName = {
-  "MG": "Minas Gerais",
-  "SP": "São Paulo",
-  //...
-}*/
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -18,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   .then(r => {
     let info = r['docs'][0];
 
+    document.getElementById('tituloTribo').innerHTML          = info['name'];
     document.getElementById('nomeTribo').innerHTML          = info['name'];
     document.getElementById('paragrafo').innerHTML          = info['paragrafo'];
     document.getElementById('autodenominacao').innerHTML    = info['autodenominacao'];
