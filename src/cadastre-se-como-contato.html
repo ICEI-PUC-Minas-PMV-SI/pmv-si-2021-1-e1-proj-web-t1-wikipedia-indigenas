@@ -1,7 +1,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Contato com a comunidade - Wiki Indígenas</title>
+    <title>Cadastre-se como contato - Wiki Indígenas</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/wiki.css">
@@ -9,9 +9,10 @@
     <link rel="shortcut icon" type="image/ico" href="imagem/icone-wiki.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
 </head>
 
-<body class="forms cadastre home">
+<body class="forms ocorrencia home">
     <header class="header-tamanho-letra">
         <nav class="navbar  navbar-light navbar-expand-sm color-bg fixed-top cor-nav">
             <div class="container-fluid">
@@ -50,78 +51,64 @@
     </div>
     <main id="busca">
 
+
         <section>
+
             <h2 class="titulo" id="nome-da-tribo"></h2>
-            <form class="alinhar-centro" id="contatoComunidade">
+            <div class="container">
+                <form id="cadastreSe" class="alinhar-centro">
+                    <h4>Cadastre-se como contato</h4>
+                    <label for="name">Selecione a comunidade </label>
+                    <select name="name" class="form-control form-control-sm">
+                      <option value="">Selecione</option>
+                    </select>
 
-                <div class="form-group espaco">
-                  <label for="name">Selecione a comunidade </label>
-                  <select name="name" class="form-control form-control-sm">
-                    <option value="">Selecione</option>
+                        <h4 class="">Seus dados</h4>
+                        <div class="form-group ">
+                            <label for="autor">Nome </label>
+                            <input type="text" class="form-control" id="autor" name="autor" placeholder="">
+                        </div>
 
-                  </select>
-                </div>
+                        <div class="form-group espaco ">
+                            <label for="name">E-mail </label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="">
+                        </div>
 
-                <div class="form-group">
-                    <label for="nome">Nome </label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="">
-                </div>
+                        <div class="form-group espaco ">
+                            <label for="name">Telefone </label>
+                            <input type="telefone" class="form-control" id="telefone" name="telefone" placeholder="">
+                        </div>
 
-                <div class="form-group espaco">
-                    <label for="email">Endereço de email </label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="">
-                </div>
+                        <div class="form-group espaco ">
+                            <label for="description">Mensagem </label>
+                            <textarea class="form-control" id="description" name="description" id="description" rows="3"></textarea>
+                        </div>
 
-<<<<<<< HEAD
-    <div class="form-group espaco">
-    <label for="email">Endereço de email </label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="">
-  </div>
-  
-  <div class="form-group espaco">
-    <label for="msg">Escreva sua mensagem </label>
-    <textarea class="form-control" id="msg" name="msg" id="msg" rows="3"></textarea>
-  </div>
-    <div class="row"> 
-     <div class="col-12 mt-3 col-sm-3 style btn-group">
-    <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
-    </div>
-    <input type="hiden" name="name" id="name" value="apinaje" />
-</form>
-=======
-                <div class="form-group espaco">
-                    <label for="msg">Escreva sua mensagem </label>
-                    <textarea class="form-control" id="msg" name="msg" id="msg" rows="3"></textarea>
-                </div>
-                <div class="row">
-                    <div class="col-12 mt-3 col-sm-3 style btn-group">
-                        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-                    </div>
-            </form>
->>>>>>> main
-        </section>
+                        <div class="row">
+                            <div class="col-10 mt-4 col-sm-4 style btn-group " style="padding-bottom: 30px;">
+                                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                            </div>
+                      </form>
+               </section>
 
-        
-        <section style="padding-top: 100px">
-            <!-- Footer -->
-            <footer class="text-center text-white" style="background-color: #ccc">
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2021 Copyright:
-                    <a class="text-white underline-text" href="index.html">Wikipédia Indígena</a>
-                </div>
-            </footer>
-            <!-- Footer -->
-        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #ccc">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-white underline-text" href="index.html">Wikipédia Indígena</a>
+            </div>
+        </footer>
+        <!-- Footer -->
+
 
     </main>
-</body>
 
-<script>
-    atual = document.getElementById("cadastro");
-</script>
+
+</body>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/busca.js"></script>
 <script type="text/javascript" src="./js/scripts.js"></script>
-<script type="module" src="./js/contatoComunidade.js"></script>
+<script type="text/javascript" src="./js/busca.js"></script>
+<script type="module" src="./js/cadastreSeComoContato.js"></script>
 
 </html>

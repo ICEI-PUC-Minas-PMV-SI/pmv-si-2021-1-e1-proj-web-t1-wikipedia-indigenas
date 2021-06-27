@@ -2,54 +2,53 @@
 <html lang="pt-br">
 
 <head>
-  <title>Wiki Indígenas</title>
+  <title id="tituloTribo">Wiki Indígenas</title>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/wiki.css">
-  <link rel="stylesheet" type="text/css" href="../css/tribos.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/wiki.css">
+  <link rel="stylesheet" type="text/css" href="css/tribos.css">
   <script src="https://kit.fontawesome.com/0f2e87eb27.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image/ico" href="../assets/shortcut-icon.png">
+  <link rel="shortcut icon" type="image/ico" href="assets/shortcut-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-  <script defer type="text/javascript " src="../js/tribos.js "></script>
-  <script defer type="text/javascript " src="../js/bootstrap.min.js "></script>
-  <script defer type="text/javascript " src="../js/scripts.js "></script>
+  <script defer type="text/javascript " src="js/tribos.js "></script>
+  <script defer type="text/javascript " src="js/bootstrap.min.js "></script>
+  <!-- <script defer type="text/javascript " src="js/scripts.js "></script> -->
 </head>
 
 <body class="home">
-       <header>
+       <header class="header-tamanho-letra">
         <nav class="navbar  navbar-light navbar-expand-sm color-bg">
             <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Wikipédia Indígena</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="../cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li>
-        <li class="nav-item"><a class="nav-link" href="../contato-com-a-comunidade.html">Contato com a comunidade</a></li>
-        <li class="nav-item"><a class="nav-link" href="../registrar-ocorrencia.html">Registre sua ocorrência</a></li>
-      </ul>
-              <div class="searchBar">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button id="search">
+                <a class="navbar-brand" href="./index.html"><img src="imagem/wiki-imagem.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./ocorrencias.html">Ocorrências</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registrar-ocorrencia.html">Registre sua ocorrência</a></li>
+                    </ul>
+                    <div class="searchBar">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button id="search">
                             <span class="input-group-text border-0" id="search-addon">
-                                <a href="busca.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg></a>
+                                </svg>
                             </span>
                         </button>
+                            </div>
+                            <input id="search-bar" type="text" class="form-control" autocomplete="off" placeholder="Busque sua comunidade">
+                        </div>
                     </div>
-                    <input type="search" class="form-control" placeholder="Encontre sua comunidade">
                 </div>
             </div>
-      </div>
-  </div>
-</nav>
+          </nav>
         <div id="main-image"></div>
     </header>
 
@@ -63,13 +62,18 @@
       
       <br/>
       <div class="content-wrapper">
-        
-        <div class="mcol">
 
+        <div class="mcol">
           <div class="tribo-txt">
+            <div id="creditos">
+              <span id="autor"></span>
+              <span id="original"></span>
+            </div>
             <p id="paragrafo"></p>
           </div> <!-- tribo-txt -->
-          <a id="readMore" href="" target="_blank">Leia mais...</a>
+          <div id="readMore">
+            
+          </div>
 
         </div> <!-- mcol --> 
           
@@ -83,13 +87,13 @@
           <p id="populacao"></p>
           <b>Família Linguística</b><br>
           <p id="familiaLinguistica"></p><br>
-          <b>Terras Habitadas</b>
-          <p><a id="mapa" href="" target="_blank">Ver mapa</a></p>
+          <!-- <b>Terras Habitadas</b>
+          <p><a id="mapa" href="" target="_blank">Ver mapa</a></p> -->
         </div>
           <br>
-          <i class="fas fa-envelope"></i><a href="LINK AQUI" target="_blank">Contato</a><br>
-          <i class="fas fa-edit"></i><a href="LINK AQUI" target="_blank">Sou desta comunidade</a><br>
-          <i class="fas fa-edit"></i><a href="LINK AQUI" target="_blank">Registrar ocorrência</a>
+          <i class="fas fa-envelope"></i><a href="contato-com-a-comunidade.html" name="contato">Contato</a><br>
+          <i class="fas fa-edit"></i><a href="cadastre-se-como-contato.html" name="cadastre-se">Sou desta comunidade</a><br>
+          <i class="fas fa-edit"></i><a href="registrar-ocorrencia.html">Registrar ocorrência</a>
 
         </div> <!-- rcol -->
 
