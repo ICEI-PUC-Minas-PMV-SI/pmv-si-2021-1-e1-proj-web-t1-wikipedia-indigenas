@@ -5,7 +5,7 @@ O projeto utiliza-se de linguages de front-end, sendo o Javascript responsável 
 O javascript foi organizado de modo a separar em arquivos diferentes cada página ou componente. Assim, no diretório `src/js` temos uma lista de arquivos:
 
 &nbsp;
-
+`src/js`
 ```
 home.js
 busca.js
