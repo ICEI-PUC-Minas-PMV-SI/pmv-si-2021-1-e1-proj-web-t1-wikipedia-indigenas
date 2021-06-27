@@ -1,7 +1,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Wiki Indígenas</title>
+    <title>Contato com a comunidade - Wiki Indígenas</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/wiki.css">
@@ -15,15 +15,14 @@
     <header class="header-tamanho-letra">
         <nav class="navbar  navbar-light navbar-expand-sm color-bg fixed-top cor-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="imagem/wiki-imagem.png"></a>
+                <a class="navbar-brand" href="./index.html"><img src="imagem/wiki-imagem.png"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contato-com-a-comunidade.html">Contato com a comunidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./ocorrencias.html">Ocorrências</a></li>
                         <li class="nav-item"><a class="nav-link" href="registrar-ocorrencia.html">Registre sua ocorrência</a></li>
                     </ul>
                     <div class="searchBar">
@@ -54,7 +53,14 @@
         <section>
             <h2 class="titulo" id="nome-da-tribo"></h2>
             <form class="alinhar-centro" id="contatoComunidade">
-                <input type="hidden" name="name" id="name" />
+
+                <div class="form-group espaco">
+                  <label for="name">Selecione a comunidade </label>
+                  <select name="name" class="form-control form-control-sm">
+                    <option value="">Selecione</option>
+
+                  </select>
+                </div>
 
                 <div class="form-group">
                     <label for="nome">Nome </label>
@@ -72,28 +78,12 @@
                 </div>
                 <div class="row">
                     <div class="col-12 mt-3 col-sm-3 style btn-group">
-                        <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
+                        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
                     </div>
             </form>
         </section>
 
-        <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Seus dados foram enviados!
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <section style="padding-top: 100px">
             <!-- Footer -->
             <footer class="text-center text-white" style="background-color: #ccc">

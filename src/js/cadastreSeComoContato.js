@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let selected = "";
         if(item.slug == tribo){
-          console.log(item.slug)
           selected = ' selected="selected"'
         }
 
@@ -43,39 +42,39 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
   
-  // let form = document.getElementById('contatoComunidade');
+  let form = document.getElementById('cadastreSe');
 
-  // form.addEventListener('submit', (e) => { 
+  form.addEventListener('submit', (e) => { 
   
-  //   e.preventDefault(); e.stopPropagation();
-  //   let data = {
-  //     data: Form.data(form) 
-  //   }
+    e.preventDefault(); e.stopPropagation();
+    let data = {
+      data: Form.data(form) 
+    }
 
-  //   fetch('https://wiki.previa.app/api/wiki/contato/create', {
-  //     method: 'POST', 
-  //     headers: {
-  //       'Content-type': 'application/json' 
-  //     },
-  //     body: JSON.stringify(data) 
-  //   }).then(r => r.json()) 
-  //     .then(r => { 
+    fetch('https://wiki.previa.app/api/wiki/contato/create', {
+      method: 'POST', 
+      headers: {
+        'Content-type': 'application/json' 
+      },
+      body: JSON.stringify(data) 
+    }).then(r => r.json()) 
+      .then(r => { 
 
-  //       let id = 'modalContatoComunidade'; 
+        let id = 'modalContatoComunidade'; 
 
-  //       let Modal = new bsModal({
-  //         id: id,
-  //         title: 'Contato com a comunidade',
-  //         message: r.message
-  //       })
+        let Modal = new bsModal({
+          id: id,
+          title: 'Contato com a comunidade',
+          message: r.message
+        })
 
-  //       Modal.render(document.getElementsByTagName('body')[0]);
+        Modal.render(document.getElementsByTagName('body')[0]);
         
-  //       (new bootstrap.Modal(document.getElementById(id), {})).show();
+        (new bootstrap.Modal(document.getElementById(id), {})).show();
 
-  //     })
+      })
 
-  // })
+  })
 
 
 });
