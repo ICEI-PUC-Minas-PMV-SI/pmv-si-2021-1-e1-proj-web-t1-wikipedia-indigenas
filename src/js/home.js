@@ -37,6 +37,7 @@ let init = () => {
   window.localidades = {}
 
   comunidades.forEach(a => {
+    
     if (a.slug != undefined) {
       // fetch letras
       let l = a.slug.slice(0, 1).toUpperCase();

@@ -14,7 +14,6 @@ form.addEventListener('submit', (e) => {
   // isso possibilita que a gente escreva o que quer fazer aqui dentro.
   e.preventDefault(); e.stopPropagation();
 
-
   let data = {
     data: Form.data(form) // obtem o JSON dos dados do formulário e atribui a um objeto data, esperado pela API
   }
@@ -45,6 +44,9 @@ form.addEventListener('submit', (e) => {
       // então chamei o objeto Modal do bootstrap para manipulá-lo. Então mandei exibi-lo depois
       // de o ter inserido no body html.
       (new bootstrap.Modal(document.getElementById(id), {})).show();
+
+      // recarregando no localStorage todas as tribos
+      loadtribes(true);
 
     })
 
