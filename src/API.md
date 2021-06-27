@@ -153,3 +153,112 @@ No corpo da requisição `body-raw` deve ser enviado um objeto `data` conforme e
 |**description**|*string*| obrigatório | texto com a descrição da ocorrência |
 
 
+&nbsp;
+&nbsp;
+
+## Cadastrar uma comunidade
+Endpoint para cadastro de uma nova comunidade
+
+#### Request
+
+`POST /wiki/comunidade/create`
+
+
+#### Objeto
+No corpo da requisição `body-raw` deve ser enviado um objeto `data` conforme exemplo abaixo
+
+```
+{
+  "data": {
+    "name": "Tenondé Porã",
+    "autodenominacao": "Tenondé Porã",
+    "familiaLinguistica": "Guarani",
+    "autor": "Adriano Karipuna",
+    "email": "ericmantoani+karipuna@gmail.com",
+    "description": "Armados e equipados com recursos avançados, como aparelhos de georreferenciamento (GPS), grileiros avançam sobre reservas indígenas, intimidam e ameaçam povos de diversas etnias. Promovem suas próprias demarcações, criam estradas clandestinas e espalham o terror. Entre os crimes praticados estão a exploração de garimpos, a extração de madeira e o loteamento de terras."
+  }
+}
+```
+
+
+&nbsp;
+&nbsp;
+
+## Cadastrar-se como contato uma comunidade
+Endpoint para cadastro de uma nova comunidade
+
+#### Request
+
+`POST /wiki/comunidade/contato`
+
+
+#### Objeto
+No corpo da requisição `body-raw` deve ser enviado um objeto `data` conforme exemplo abaixo
+
+```
+{
+  "data": {
+    "name": "karipuna"
+    "nome": "Adriano Karipuna",
+    "email": "ericmantoani+karipuna@gmail.com",
+    "telefone": "11 99835-8071",
+    "description": ""
+  }
+}
+```
+
+
+&nbsp;
+&nbsp;
+
+## Cadastrar-se como contato uma comunidade
+Endpoint para cadastro de uma nova comunidade
+
+#### Request
+
+`POST /wiki/contato/comunidade`
+
+
+#### Objeto
+No corpo da requisição `body-raw` deve ser enviado um objeto `data` conforme exemplo abaixo
+
+```
+{
+  "data": {
+    "name": "karipuna"
+    "nome": "Adriano Karipuna",
+    "email": "ericmantoani+karipuna@gmail.com",
+    "telefone": "11 99835-8071",
+    "description": ""
+  }
+}
+```
+
+
+&nbsp;
+&nbsp;
+
+## Comunicar-se com uma comunidade
+Endpoint para cadastro de uma nova comunidade
+
+#### Request
+
+`POST /wiki/contato/create`
+
+
+#### Objeto
+No corpo da requisição `body-raw` deve ser enviado um objeto `data` conforme exemplo abaixo
+
+```
+{
+  "data": {
+    "name": "karipuna"
+    "nome": "Adriano Karipuna",
+    "email": "ericmantoani+karipuna@gmail.com",
+    "telefone": "11 99835-8071",
+    "description": "mensagem para a comunidade"
+  }
+}
+```
+
+
