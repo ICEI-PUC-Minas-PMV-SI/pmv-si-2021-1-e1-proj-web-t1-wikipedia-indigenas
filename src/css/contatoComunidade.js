@@ -31,19 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
       data: Form.data(form) 
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        let name = (new URL(location.href)).searchParams.get("name");
-        document.getElementById('name').value - name;
-        
-        console.log(name);
-        })
-        
-        document. geElementById('name').value = name;{
-        Form.data(form)
-        }
-    }
-
-    // fetch('http://api.wiki.local/wiki/contato/create', {
     fetch('https://wiki.previa.app/api/wiki/contato/create', {
       method: 'POST', 
       headers: {
