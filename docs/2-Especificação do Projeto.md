@@ -22,27 +22,27 @@ Anderson percebeu o quão pouco sabe sobre estes povos e decidiu buscar a fundo 
 
 ## Histórias de Usuários
 
-Eu como indígena :
+Como indígena :
 
-- Como indígena, quero divulgar meu trabalho para que qualquer pessoa possa encontrar.
+- Como indígena, quero cadastrar minha comunidade para obter visivilidade.
 - Como indígena, quero relatar ameaças que minha comunidade vem recebendo por parte de fazendeiros.
-- Como indígena, quero encontrar relatos de ocorrências em outras comunidades para poder entrar em contato com essas comunidades.
+- Como indígena, quero encontrar relatos de ocorrências em outras comunidades para poder entrar em contato com essas comunidades e eventualmente organizar ações conjuntas.
 
 
-Eu como pesquisadora :
+Como pesquisadora :
 
 - Gostaria de colher informações culturais confiáveis das tribos indígenas que pretendo estudar.
-- Gostaria de poder pesquisar a respeito de ameaças que as tibos possam estar sofrendo.
+- Gostaria de poder pesquisar a respeito de ameaças que as tribos possam estar sofrendo.
 - Gostaria de me relacionar diretamente com tribos que estão longe de mim.
-- Gostaria de me inteirar da vida cotidiana das tribos em que fazer isso pessoalmente seja muito complicado.
+- Gostaria de me inteirar sobre a vida cotidiana de comunidades sem ter de fazê-lo pessoalmente.
 
 
-Eu como um cidadão :
+Como um cidadão :
 
-- Gostaria de encontrar pessoas que compartilham hábitos, valores culturais, estilos musicais e ideologias políticas igual a minha.
-- Gostaria de visualizar o perfil de pessoas de outras tribos.
+- Gostaria de visualizar o perfil de pessoas de comunidades indígenas.
+- Gostaria de conhecer a história de determinadas tribos.
+- Gostaria de encontrar pessoas com interesses comuns aos meus.
 - Gostaria de me conectar com indígenas da minha idade, trocar informações e fazer amigos.
-- Gostaria de conhecer a histórias de outras tribos.
 
 
 ## Requisitos
