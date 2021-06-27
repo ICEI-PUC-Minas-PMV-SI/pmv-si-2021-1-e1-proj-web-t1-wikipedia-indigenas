@@ -26,33 +26,42 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('familiaLinguistica').innerHTML = info['familiaLinguistica'];
 
     document.getElementById('main-image').style.backgroundImage = `url('${info.imagem}')`;
-    document.getElementById('readMore').setAttribute('href', info.link);
-
+    
+    if(info.hasOwnProperty('link') && info.link != '' ){
+      document.getElementById('readMore').innerHTML = 
+        `<a id="readMore" href="${info.link}" target="_blank">Leia mais...</a>`
+    }
+    
     document.querySelector('a[name="contato"]')
       .setAttribute('href', `../../contato-com-a-comunidade.html?name=${info.slug}`);
 
     document.querySelector('a[name="cadastre-se"]')
       .setAttribute('href', `../../cadastre-se-como-contato.html?name=${info.slug}`);
 
-    let autor = "";
-    info.nomes.forEach((v,k) => {
-      if(k > 0){
-        autor += "<br /> e ";
-      } else {
-        if(v.length > 0){
-          autor += "Por: ";
-        }
-      }
-      autor += v;
-      if(info.hasOwnProperty('cargos')){
-        if(info.cargos[k] != ''){
-          autor += `<br />${info.cargos[k]}`
-        }  
-      }
-    })
+    if(info.hasOwnProperty('nomes')){
 
-    document.getElementById('autor').innerHTML = autor;
-    document.getElementById('original').innerHTML = `<a href=${info.link}>ver original <i class="fas fa-external-link-alt"></i></a>`;
+      let autor = "";
+      info.nomes.forEach((v,k) => {
+        if(k > 0){
+          autor += "<br /> e ";
+        } else {
+          if(v.length > 0){
+            autor += "Por: ";
+          }
+        }
+        autor += v;
+        if(info.hasOwnProperty('cargos')){
+          if(info.cargos[k] != ''){
+            autor += `<br />${info.cargos[k]}`
+          }  
+        }
+      })
+
+      document.getElementById('autor').innerHTML = autor;
+      document.getElementById('original').innerHTML = `<a href=${info.link}>ver original <i class="fas fa-external-link-alt"></i></a>`;
+
+    }
+    
 
   })
 
