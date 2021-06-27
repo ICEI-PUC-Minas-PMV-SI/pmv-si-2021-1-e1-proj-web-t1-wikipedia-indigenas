@@ -54,9 +54,10 @@
         <section>
             <h2 class="titulo">Cadastre sua comunidade</h2>
             <form class="alinhar-centro" id="cadastreComunidade">
+                <h4>Dados da comunidade</h4>
                 <div class="form-group">
-                    <label for="nome">Nome da comunidade </label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="">
+                    <label for="name">Nome da comunidade </label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="">
                 </div>
 
                 <div class="form-group espaco">
@@ -64,8 +65,8 @@
                     <input type="text" class="form-control" id="autodominacao" name="autodominacao" placeholder="">
                 </div>
                 <div class="form-group espaco">
-                    <label for="localizacao">Família Linguística  </label>
-                    <input type="text" class="form-control" id="localizacao" name="localizacao" placeholder="">
+                    <label for="familiaLinguistica">Família Linguística  </label>
+                    <input type="text" class="form-control" id="familiaLinguistica" name="familiaLinguistica" placeholder="">
                 </div>
 
                 <div class=" espaco">
@@ -106,46 +107,34 @@
                     <label for="populacao">Tamanho da População  </label>
                     <input type="text" class="form-control" id="populacao" name="populacao" placeholder="">
                 </div>
-        </section>
+        
 
-        <div class="form-group espaco alinhar-centro">
+        <div class="form-group espaco ">
             <label for="paragrafo">Descreva sua comunidade </label>
             <textarea class="form-control" id="paragrafo" name="paragrafo" id="paragrafo" rows="3"></textarea>
         </div>
 
-        <div class="form-group espaco alinhar-centro">
+        <h4>Seus dados</h4>
+
+        <div class="form-group espaco ">
             <label for="autor">Nome </label>
             <input type="text" class="form-control" id="autor" name="autor" placeholder="">
         </div>
 
-        <div class="form-group espaco alinhar-centro">
+        <div class="form-group espaco ">
             <label for="name">E-mail </label>
             <input type="email" class="form-control" id="email" name="email" placeholder="">
         </div>
 
         <div class="row">
-            <div class="col-12 mt-3 col-sm-3 style btn-group alinhar-centro" style="padding-bottom: 30px;">
-                <button type="button" class="btn btn-primary mt-3" onclick="enviar();" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Enviar</button>
+            <div class="col-12 mt-3 col-sm-3 style btn-group " style="padding-bottom: 30px;">
+                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
             </div>
-            </form>
-
-            <div class="modal fade" id="modalConfirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Confirmação de adição</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Seus dados foram enviados!
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
+      </form>
+        
+      </section>
+            
             <!-- Footer -->
             <footer class="text-center text-white" style="background-color: #ccc">
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">

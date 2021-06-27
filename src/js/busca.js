@@ -4,12 +4,12 @@ let tamanho = '';
 let searchString = '';
 const searchBar = document.getElementById('search-bar');
 
-async function loadtribes() {
+async function loadtribes(force=false) {
 
-    if (localStorage.getItem('db') === null || JSON.parse(localStorage.getItem('counter')) > 9) {
+    if (localStorage.getItem('db') === null || JSON.parse(localStorage.getItem('counter')) > 9 || force) {
         // não armazenou tribos no Storage
         loading = true;
-        const res = await fetch('https://wiki.previa.app/api/search/?fl=name,imagem,localizacao,paragrafo,familiaLinguistica,slug,module,description&rows=999');
+        const res = await fetch('https://wiki.previa.app/api/search/?fl=name,imagem,localizacao,paragrafo,familiaLinguistica,slug,module,description&rows=999&sort=titleAlpha ASC');
         const tribos = await res.json();
         loading = false;
         s = tribos.docs;
@@ -33,11 +33,14 @@ searchBar.addEventListener('keyup', (e) => {
     var searchString = (e.target.value.toLowerCase());
     var buscafinal = searchString.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     var filteredtribes = s.filter(valortribo => {
+      if(valortribo.hasOwnProperty('name') && valortribo.name != ''){
         return (
             ((valortribo.hasOwnProperty('familiaLinguistica')) ? valortribo.familiaLinguistica.toLowerCase().includes(buscafinal) : false) ||
             ((valortribo.hasOwnProperty('localizacao')) ? valortribo.localizacao.toLowerCase().includes(buscafinal) : false) ||
             valortribo.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(buscafinal)
         );
+      }
+        
     });
     tamanho = filteredtribes.length;
 
