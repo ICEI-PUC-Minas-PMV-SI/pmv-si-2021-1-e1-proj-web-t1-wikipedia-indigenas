@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Wiki Indígenas</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/wiki.css">
+  <link rel="stylesheet" type="text/css" href="css/tribos.css">
+  <script src="https://kit.fontawesome.com/0f2e87eb27.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/ico" href="assets/shortcut-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+  <script defer type="text/javascript " src="js/tribos.js "></script>
+  <script defer type="text/javascript " src="js/bootstrap.min.js "></script>
+  <!-- <script defer type="text/javascript " src="js/scripts.js "></script> -->
+</head>
+
+<body class="home">
+       <header>
+        <nav class="navbar  navbar-light navbar-expand-sm color-bg">
+            <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Wikipédia Indígena</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li>
+        <li class="nav-item"><a class="nav-link" href="ocorrencias.html">Ocorrências</a></li>
+        <li class="nav-item"><a class="nav-link" href="registrar-ocorrencia.html">Registre sua ocorrência</a></li>
+      </ul>
+              <div class="searchBar">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button id="search">
+                            <span class="input-group-text border-0" id="search-addon">
+                                <a href="busca.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg></a>
+                            </span>
+                        </button>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Encontre sua comunidade">
+                </div>
+            </div>
+      </div>
+  </div>
+</nav>
+        <div id="main-image"></div>
+    </header>
+
+  <main>
+    <!-- Encontre uma comunidade-->
+    <section>
+      <h1 id="nomeTribo" style="text-align: center"></h1>
+    </section>
+    <!-- Referência -->
+    <section>
+      
+      <br/>
+      <div class="content-wrapper">
+
+        <div class="mcol">
+          <div class="tribo-txt">
+            <div id="creditos">
+              <span id="autor"></span>
+              <span id="original"></span>
+            </div>
+            <p id="paragrafo"></p>
+          </div> <!-- tribo-txt -->
+          <a id="readMore" href="" target="_blank">Leia mais...</a>
+
+        </div> <!-- mcol --> 
+          
+        <div class="rcol">
+          <div id="rcol-info">
+          <b>Autodenominação</b><br>
+          <p id="autodenominacao"></p>
+          <b>Localização</b><br>
+          <p id="localizacao"></p>
+          <b>População</b>
+          <p id="populacao"></p>
+          <b>Família Linguística</b><br>
+          <p id="familiaLinguistica"></p><br>
+          <!-- <b>Terras Habitadas</b>
+          <p><a id="mapa" href="" target="_blank">Ver mapa</a></p> -->
+        </div>
+          <br>
+          <i class="fas fa-envelope"></i><a href="../contato-com-a-comunidade.html" name="contato">Contato</a><br>
+          <i class="fas fa-edit"></i><a href="../cadastre-se-como-contato.html" name="cadastre-se">Sou desta comunidade</a><br>
+          <i class="fas fa-edit"></i><a href="../registrar-ocorrencia.html">Registrar ocorrência</a>
+
+        </div> <!-- rcol -->
+
+      </div> <!-- content-wrapper -->
+      
+      <div>
+        
+      </div>
+      
+    </section>
+    <section class="">
+  <!--Footer-->
+  <footer class="color-bg text-black text-center text-md-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="titulo-footer">Sobre nós</h5>
+
+          <p>
+               Conteúdo
+                            
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="titulo-footer ">Links</h5>
+          <ul class="list-unstyled footer">
+              <li><a href="cadastre-sua-comunidade.html">Cadastre sua comunidade</a></li> 
+              <li><a href="contato-com-a-comunidade.html">Contato com a comunidade</a></li>
+              <li><a href="reistrar-ocorrencia.html">Registre sua ocorrência</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="titulo-footer ">Sociais</h5>
+          <ul class="list-unstyled footer">
+            <a href="#!" ><i class="fab fa-facebook-square fa-3x"></i></i></a>
+            <a href="#!" ><i class="fab fa-instagram fa-3x"></i></i></a>
+            <a href="#!" ><i class="fab fa-twitter-square fa-3x"></i></i></i></a>
+            
+
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white " style="text-decoration: none;">Wikipédia Indígena</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+  </main>
+</body>
+
+</html>

@@ -159,7 +159,7 @@ const Home = {
     }
 
     const card1 =
-        `<a href=./tribos/index.html?name=${randomCard1.slug}>
+        `<a href="../tribos.html?name=${randomCard1.slug}">
          <div class="card">
            <img class="card-img-top" src="${randomCard1.imagem}">
            <div class="card-body">
@@ -170,7 +170,7 @@ const Home = {
          </a>`
     document.getElementById('card1').innerHTML = card1;
 
-    const card2 = `<a href=./tribos/index.html?name=${randomCard2.slug}>
+    const card2 = `<a href=../tribos.html?name=${randomCard2.slug}>
     <div class="card">
       <img class="card-img-top" src="${randomCard2.imagem}">
       <div class="card-body">
@@ -181,7 +181,7 @@ const Home = {
     </a>`
     document.getElementById('card2').innerHTML = card2;
 
-    const card3 = `<a href=./tribos/index.html?name=${randomCard3.slug}>
+    const card3 = `<a href=../tribos.html?name=${randomCard3.slug}>
     <div class="card">
     <img class="card-img-top" src="${randomCard3.imagem}">
     <div class="card-body">
@@ -229,7 +229,7 @@ const Indice = {
       letras[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
         tpl += 
         `<nav>
-          <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
+          <a href="../tribos.html?name=${a.slug}">${a.name}</a>
         </nav>`
       })
 
@@ -251,7 +251,7 @@ const Indice = {
       familiaLinguistica[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
         tpl += 
         `<nav>
-          <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
+          <a href="../tribos.html?name=${a.slug}">${a.name}</a>
         </nav>`
       })
 
@@ -276,7 +276,7 @@ const Indice = {
       localidades[l].sort((a, b) => (a.name > b.name) ? 1 : -1).forEach(a => {
         tpl += 
         `<nav>
-          <a href="./tribos/index.html?name=${a.slug}">${a.name}</a>
+          <a href="../tribos.html?name=${a.slug}">${a.name}</a>
         </nav>`
       })
 
