@@ -1,7 +1,5 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
-
 O projeto utiliza-se de linguages de front-end, sendo o Javascript responsável por se conectar a uma API para buscar os conteúdos exibidos e cadastrar dados nas páginas de formulário. [Documentação da API Wiki Indígena](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2021-1-e1-proj-web-t1-wikipedia-indigenas/blob/main/src/API.md).
 
 O javascript foi organizado de modo a separar em arquivos diferentes cada página ou componente. Assim, no diretório `src/js` temos uma lista de arquivos:
