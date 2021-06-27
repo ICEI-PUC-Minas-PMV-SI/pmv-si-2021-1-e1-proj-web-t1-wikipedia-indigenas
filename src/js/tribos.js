@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('familiaLinguistica').innerHTML = info['familiaLinguistica'];
 
     document.getElementById('main-image').style.backgroundImage = `url('${info.imagem}')`;
+
+    document.getElementsByTagName('title')[0].innerText = `${info['name']} - Wiki Indígenas`
     
     if(info.hasOwnProperty('link') && info.link != '' ){
       document.getElementById('readMore').innerHTML = 
