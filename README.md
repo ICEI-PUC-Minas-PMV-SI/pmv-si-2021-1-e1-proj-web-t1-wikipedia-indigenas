@@ -43,9 +43,6 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 <li><a href="src/API.md"> Documentação da API</a></li>
 
-# Código
-
-<li><a href="src/README.md"> Código Fonte</a></li>
 
 # Apresentação
 
