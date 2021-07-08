@@ -4,7 +4,7 @@ let tamanho = '';
 let searchString = '';
 const searchBar = document.getElementById('search-bar');
 
-async function loadtribes(force=false) {
+async function loadtribes(force = false) {
 
     if (localStorage.getItem('db') === null || JSON.parse(localStorage.getItem('counter')) > 9 || force) {
         // não armazenou tribos no Storage
@@ -33,14 +33,14 @@ searchBar.addEventListener('keyup', (e) => {
     var searchString = (e.target.value.toLowerCase());
     var buscafinal = searchString.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     var filteredtribes = s.filter(valortribo => {
-      if(valortribo.hasOwnProperty('name') && valortribo.name != ''){
-        return (
-            ((valortribo.hasOwnProperty('familiaLinguistica')) ? valortribo.familiaLinguistica.toLowerCase().includes(buscafinal) : false) ||
-            ((valortribo.hasOwnProperty('localizacao')) ? valortribo.localizacao.toLowerCase().includes(buscafinal) : false) ||
-            valortribo.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(buscafinal)
-        );
-      }
-        
+        if (valortribo.hasOwnProperty('name') && valortribo.name != '') {
+            return (
+                ((valortribo.hasOwnProperty('familiaLinguistica')) ? valortribo.familiaLinguistica.toLowerCase().includes(buscafinal) : false) ||
+                ((valortribo.hasOwnProperty('localizacao')) ? valortribo.localizacao.toLowerCase().includes(buscafinal) : false) ||
+                valortribo.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(buscafinal)
+            );
+        }
+
     });
     tamanho = filteredtribes.length;
 
@@ -57,7 +57,7 @@ searchBar.addEventListener('keyup', (e) => {
             if (tribo.module == "comunidade") {
                 tpl +=
                     `<div class="container distanciamento">
-                 <h3><a href=./tribos/index.html?name=${tribo.slug}>${tribo.name}</a></h3><span class="badge rounded-pill bg-dark">${tribo.module}</span>
+                 <h3><a href=./tribos.html?name=${tribo.slug}>${tribo.name}</a></h3><span class="badge rounded-pill bg-dark">${tribo.module}</span>
                  <span class="badge rounded-pill bg-primary">${tribo.localizacao}</span></br>
              ${tribo.paragrafo}
              </div>`
