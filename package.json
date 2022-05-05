@@ -1,0 +1,26 @@
+{
+  "name": "Wikipedia-indigenas",
+  "version": "1.0.0",
+  "description": "`Sistemas de Informação`",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexPantolfo/Wikipedia-indigenas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexPantolfo/Wikipedia-indigenas/issues"
+  },
+  "homepage": "https://github.com/AlexPantolfo/Wikipedia-indigenas#readme",
+  "dependencies": {
+    "firebase": "^9.7.0"
+  }
+}
